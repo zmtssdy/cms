@@ -99,10 +99,10 @@ html {
   border-top: 8px solid #fff;
 }
 .module .m-top .top-right ul .top-user i {
-  background: url('../img/t-user-normal.png') no-repeat 1px 3px;
+  background: url('../img/t-user-normal.png') no-repeat -56px -10px;
 }
-.module .m-top .top-right ul .top-idnex i {
-  background: url('../img/t-home-normal.png') no-repeat 1px 5px;
+.module .m-top .top-right ul .top-index i {
+  background: url('../img/t-home-normal.png') no-repeat -56px -12px;
 }
 .module .m-top .top-right ul .top-set {
   position: relative;
@@ -111,7 +111,7 @@ html {
   padding: 0 25px;
 }
 .module .m-top .top-right ul .top-set i {
-  background: url('../img/t-setting-normal.png') no-repeat 1px 4px;
+  background: url('../img/t-setting-normal.png') no-repeat -56px -10px;
 }
 .module .m-top .top-right ul .top-set .hover-set {
   display: none;
@@ -169,19 +169,19 @@ html {
   border: none;
 }
 .module .m-top .top-right ul .top-exit i {
-  background: url('../img/t-out-normal.png') no-repeat 1px 5px;
+  background: url('../img/t-out-normal.png') no-repeat -56px -10px;
 }
 .module .m-top .top-right ul .active {
   background: #E2E6EF;
 }
 .module .m-top .top-right ul .active span {
-  color: #165ABB;
+  color: #435573;
 }
 .module .m-top .top-right ul .active i {
-  background-position: 1px -28px;
+  background-position: -10px -11px;
 }
 .module .m-top .top-right ul .active em {
-  border-top: 8px solid #165ABB;
+  border-top: 8px solid #435573;
 }
 .module .m-left {
   float: left;
@@ -221,7 +221,6 @@ html {
   height: calc(100% - 80px);
   overflow-y: auto;
   box-sizing: border-box;
-  background: #e9f8f9;
 }
 .module .m-mian .content {
   width: 100%;
@@ -239,4 +238,7 @@ html {
   .module .m-top .top-right ul li a {
     padding: 0 10px !important;
   }
+}
+.mt20 {
+  margin-top: 20px;
 }

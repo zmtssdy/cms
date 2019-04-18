@@ -1,0 +1,68 @@
+.index-floor1 ul li {
+  float: left;
+  width: 20%;
+  height: 90px;
+}
+.index-floor1 ul li i,
+.index-floor1 ul li .floor1-content,
+.index-floor1 ul li p,
+.index-floor1 ul li span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.index-floor1 ul li i {
+  margin-left: 10px;
+  width: 42px;
+  height: 90px;
+}
+.index-floor1 ul li p {
+  padding: 0 10px;
+  font-size: 16px;
+  color: #fff;
+  line-height: 90px;
+}
+.index-floor1 ul li span {
+  font-size: 30px;
+  color: #fff;
+  line-height: 90px;
+}
+.index-floor1 ul .floor1-1 {
+  background: #165ABB;
+}
+.index-floor1 ul .floor1-1 i {
+  background: url('../img/s-mission.png') no-repeat center;
+}
+.index-floor1 ul .floor1-2 {
+  background: #256BD0;
+}
+.index-floor1 ul .floor1-2 i {
+  background: url('../img/s-record.png') no-repeat center;
+}
+.index-floor1 ul .floor1-3 {
+  background: #347CE3;
+}
+.index-floor1 ul .floor1-3 i {
+  background: url('../img/s-alluser.png') no-repeat center;
+}
+.index-floor1 ul .floor1-4 {
+  background: #428BF2;
+}
+.index-floor1 ul .floor1-4 i {
+  background: url('../img/s-online.png') no-repeat center;
+}
+.index-floor1 ul .floor1-5 {
+  background: #5B9CF9;
+}
+.index-floor1 ul .floor1-5 i {
+  background: url('../img/s-watch.png') no-repeat center;
+}
+@media screen and (max-width: 1680px) {
+  .index-floor1 ul li .floor1-content {
+    padding-left: 20px;
+  }
+  .index-floor1 ul li .floor1-content p,
+  .index-floor1 ul li .floor1-content span {
+    display: block;
+    line-height: 30px;
+  }
+}

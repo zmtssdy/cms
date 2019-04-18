@@ -234,6 +234,9 @@ html {
 .layui-nav-tree .layui-nav-item a:hover {
   background: #165ABB;
 }
+.layui-nav-tree .layui-nav-bar {
+  display: none;
+}
 @media screen and (max-width: 1400px) {
   .module .m-top .top-right ul li a {
     padding: 0 10px !important;

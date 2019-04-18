@@ -216,7 +216,7 @@ html {
 }
 .module .m-mian {
   float: left;
-  padding: 20px;
+  padding: 0 20px 20px;
   width: calc(100% - 200px);
   height: calc(100% - 80px);
   overflow-y: auto;
@@ -225,8 +225,15 @@ html {
 }
 .module .m-mian .content {
   width: 100%;
-  height: 3000px;
-  background: #000;
+}
+.layui-nav-itemed > .layui-nav-child {
+  background: #10182A;
+}
+.layui-nav-itemed > .layui-nav-child dd:hover {
+  background: #0F4399;
+}
+.layui-nav-tree .layui-nav-item a:hover {
+  background: #165ABB;
 }
 @media screen and (max-width: 1400px) {
   .module .m-top .top-right ul li a {

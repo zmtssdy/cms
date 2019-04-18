@@ -1,0 +1,254 @@
+/**
+*公用css
+*用于页面布局头部以及导航栏公用样式
+*/
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+.module {
+    width: 100%;
+    min-width: 1200px;
+    height: 100%;
+    min-height: 500px;
+    .m-top {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        background: #165ABB;
+        .logo {
+            float: left;
+            width: 200px;
+            height: 100%;
+            font-size: 24px;
+            font-weight: 600;
+            color: #fff;
+            line-height: 80px;
+            text-indent: 2.5em;
+            background: #0948A2 url('../img/in-logo.png') no-repeat 20px 25px;
+        }
+        .top-title {
+            float: left;
+            padding-left: 37px;
+            font-size: 24px;
+            line-height: 80px;
+            color: #fff;
+            span {
+                float: left;
+            }
+            ul {
+                float: left;
+                padding: 24px  0 0 49px;
+                li {
+                    float: left;
+                    margin-right: 18px;
+                    width: 100px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    color: #91BCF8;
+                    font-size: 14px;
+                    cursor: pointer;
+                    border: 1px solid #357BDE;
+                }
+                .active {
+                    color: #fff;
+                    background: #357BDE;
+                }
+            }
+        }
+        .top-right {
+            float: right;
+            ul {
+                li {
+                    float: left;
+                    height: 80px;
+                    border-right: 1px solid #E2E6EF;
+                    a {
+                        display: block;
+                        padding: 0 35px;
+                        height: 80px;
+                        text-align: center;
+                        line-height: 80px;
+                        i {
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 24px;
+                            height: 24px;
+                        }
+                        span {
+                            display: inline-block;
+                            vertical-align: middle;
+                            font-size: 16px;
+                            color: #fff;
+                        }
+                        em {
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-left: 10px;
+                            width: 0;
+                            height: 0;
+                            border-left: 5px solid transparent;
+                            border-right: 5px solid transparent;
+                            border-top: 8px solid #fff;
+                        }
+                    }
+                }
+                .top-user {
+                    i {
+                        background: url('../img/t-user-normal.png') no-repeat 1px 3px;
+                    }
+                }
+                .top-idnex {
+                    i {
+                        background: url('../img/t-home-normal.png') no-repeat 1px 5px;
+                    }
+                }
+                .top-set {
+                    position: relative;
+                    a {
+                        padding: 0 25px;
+                    }
+                    i {
+                        background: url('../img/t-setting-normal.png') no-repeat 1px 4px;
+                    }
+                    .hover-set {
+                        display: none;
+                        position: absolute;
+                        top: 80px;
+                        right: 0;
+                        width: 160px;
+                        height: 80px;
+                        background: #435573;
+                        .hover-set-triangle {
+                            position: absolute;
+                            top: -7px;
+                            right: 9px;
+                            width:0;
+                            height:0;
+                            border-left:5px solid transparent;
+                            border-right:5px solid transparent;
+                            border-bottom:8px solid #435573;
+                        }
+                        dl {
+                            dd {
+                                margin: 9px 0;
+                                width: 100%;
+                                height: 27px;
+                                text-align: left;
+                                line-height: 27px;
+                                b {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    margin: 0 12px 0 20px;
+                                    width: 16px;
+                                    height: 16px;
+                                }
+                                .hover-set-p {
+                                    background: url('../img/icon-password.png') no-repeat center;
+                                }
+                                .hover-set-v {
+                                    background: url('../img/icon-version.png') no-repeat center;
+                                }
+                                label {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    font-size: 14px;
+                                    color: #fff;
+                                    cursor: pointer;
+                                }
+                                &:hover {
+                                    background: #828FAB;
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        .hover-set {
+                            display: block;
+                        }
+                    }
+                }
+                .top-exit {
+                    border: none;
+                    i {
+                        background: url('../img/t-out-normal.png') no-repeat 1px 5px;
+                    }
+                }
+                .active {
+                    background: #E2E6EF;
+                    span {
+                        color: #165ABB;
+                    }
+                    i {
+                        background-position: 1px -28px;
+                    }
+                    em {
+                        border-top: 8px solid #165ABB;
+                    }
+                }
+            }
+        }
+    }
+    .m-left {
+        float: left;
+        width: 200px;
+        height: calc(~"100% - 80px");
+        background: #2F4056;
+        ul {
+            li {
+                a {
+                    i {
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 24px; 
+                        width: 22px;
+                        height: 22px;
+                    }
+                    .icon-dbgl {
+                        background: url('../img/i-vedio.png') no-repeat center;
+                    }
+                    .icon-zbgl {
+                        background: url('../img/i-broadcast.png') no-repeat center;
+                    }
+                    .icon-plgl {
+                        background: url('../img/i-comment.png') no-repeat center;
+                    }
+                    .icon-flgl {
+                        background: url('../img/i-calssify.png') no-repeat center;
+                    }
+                    .icon-yhgl {
+                        background: url('../img/i-users.png') no-repeat center;
+                    }
+                }
+                .layui-nav-child {
+                    a {
+                        text-indent: 3.3em;
+                    }
+                }
+            }
+        }
+    }
+    .m-mian {
+        float: left;
+        padding: 20px;
+        width: calc(~"100% - 200px");
+        height: calc(~"100% - 80px");
+        overflow-y: auto;
+        box-sizing: border-box;
+        background: #e9f8f9;
+        .content {
+            width: 100%;
+            height: 3000px;
+            background: #000;
+        }
+    }
+}
+
+@media screen and (max-width:1400px){
+    .module .m-top .top-right ul li a {
+        padding: 0 10px !important;
+    }
+}

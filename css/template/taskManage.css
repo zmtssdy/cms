@@ -1,0 +1,162 @@
+/*
+ * @Author: xuwenkang
+ * @Description: 任务管理页面样式
+ * @Date: 2019-04-20 21:09:32
+ * @Last Modified by: xuwenkang
+ * @Last Modified time: 2019-04-20 22:22:34
+*/
+.task-manage-box {
+  padding: 30px 0;
+}
+.task-manage-box .task-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  height: 180px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.task-manage-box .task-list li .color-block {
+  width: 10px;
+}
+.task-manage-box .task-list li .color-block.green {
+  background: #83D69E;
+}
+.task-manage-box .task-list li .color-block.red {
+  background: #F9978A;
+}
+.task-manage-box .task-list li .list-content {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 10px);
+}
+.task-manage-box .task-list li .list-content .top {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  height: 50px;
+  line-height: 50px;
+  background: #F0F2F7;
+}
+.task-manage-box .task-list li .list-content .top input {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+.task-manage-box .task-list li .list-content .top .task-title {
+  margin-left: 20px;
+  font-size: 16px;
+  color: #273142;
+  vertical-align: middle;
+}
+.task-manage-box .task-list li .list-content .middle {
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #E2E6EF;
+}
+.task-manage-box .task-list li .list-content .middle .text-box {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  height: 100%;
+}
+.task-manage-box .task-list li .list-content .middle .text-box .creator {
+  display: flex;
+  justify-content: center;
+  max-width: 160px;
+  width: 15%;
+  height: 100%;
+  align-items: center;
+  border-right: 1px solid #E2E6EF;
+}
+.task-manage-box .task-list li .list-content .middle .text-box .creator .avtor {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task-manage-box .task-list li .list-content .middle .text-box .creator .avtor img {
+  max-width: 80px;
+}
+.task-manage-box .task-list li .list-content .middle .text-box .creator .text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  font-size: 14px;
+}
+.task-manage-box .task-list li .list-content .middle .text-box .status-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.task-manage-box .task-list li .list-content .middle .text-box .status-item img.icon {
+  margin-right: 12px;
+  width: 20px;
+  height: auto;
+}
+.task-manage-box .task-list li .list-content .middle .text-box .status-item span {
+  font-size: 14px;
+  color: #585E67;
+}
+.task-manage-box .task-list li .list-content .middle .text-box .time {
+  width: 25%;
+}
+.task-manage-box .task-list li .list-content .middle .text-box .type {
+  width: 25%;
+}
+.task-manage-box .task-list li .list-content .middle .text-box .direct {
+  width: 15%;
+}
+.task-manage-box .task-list li .list-content .middle .text-box .record {
+  width: 15%;
+}
+.task-manage-box .task-list li .list-content .middle .status-box {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.task-manage-box .task-list li .list-content .middle .status-box .status {
+  width: 80%;
+  height: 32px;
+  max-width: 180px;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+}
+.task-manage-box .task-list li .list-content .middle .status-box .status.yellow {
+  background: linear-gradient(90deg, #fcea84, #ffb643, #fcea84);
+}
+.task-manage-box .task-list li .list-content .middle .status-box .status.blue {
+  background: linear-gradient(90deg, #9cccfe, #2c93fd, #9cccfe);
+}
+.task-manage-box .task-list li .list-content .bottom {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 24px;
+  align-items: center;
+  background: #fff;
+  height: 40px;
+}
+.task-manage-box .task-list li .list-content .bottom .option-item {
+  display: flex;
+  align-items: center;
+}
+.task-manage-box .task-list li .list-content .bottom .option-item img.icon {
+  margin-right: 15px;
+  width: 15px;
+  height: auto;
+}
+.task-manage-box .task-list li .list-content .bottom i.cut-line {
+  margin: 0 20px;
+  width: 1px;
+  height: 20px;
+  background-color: #E2E6EF;
+}

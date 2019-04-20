@@ -224,14 +224,16 @@ html {
 }
 .module .m-mian {
   float: left;
-  padding: 0 20px 20px;
   width: calc(100% - 200px);
   height: calc(100% - 80px);
   overflow-y: auto;
   box-sizing: border-box;
+  background: #e2e6ef;
 }
 .module .m-mian .content {
+  padding: 0 20px 20px;
   width: 100%;
+  box-sizing: border-box;
 }
 .layui-nav-itemed > .layui-nav-child {
   background: #10182A;
@@ -252,4 +254,67 @@ html {
 }
 .mt20 {
   margin-top: 20px;
+}
+.top-bra {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  height: 50px;
+  align-items: center;
+  background-color: #fff;
+}
+.top-bra .left-box {
+  display: flex;
+  align-items: center;
+}
+.top-bra .left-box img.icon {
+  width: 24px;
+  height: auto;
+}
+.top-bra .left-box .text {
+  font-size: 14px;
+  color: #165ABB;
+  margin-left: 5px;
+}
+.top-bra .left-box .arrow {
+  font-size: 13px;
+  margin: 0 3px 0 5px;
+  color: #165ABB;
+}
+.top-bra .right-box {
+  display: flex;
+}
+.top-bra .right-box a.button {
+  margin-right: 1px;
+  width: 90px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  font-size: 14px;
+  color: #273142;
+  background: #F0F3F9;
+}
+.top-bra .right-box .search-box {
+  display: flex;
+  width: 206px;
+  height: 34px;
+  padding-left: 11px;
+  box-sizing: border-box;
+  background: #F0F3F9;
+}
+.top-bra .right-box .search-box input.search-input {
+  border: 0;
+  width: 80%;
+  height: 100%;
+  background: none;
+}
+.top-bra .right-box .search-box a.search-btn {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-bra .right-box .search-box a.search-btn img {
+  width: 20px;
+  height: 20px;
 }

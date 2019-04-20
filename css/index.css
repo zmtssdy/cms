@@ -5,7 +5,7 @@
   font-size: 14px;
   color: #fff;
   line-height: 50px;
-  background: #273142;
+  background: #10182a;
 }
 .index-h3 i {
   margin: 0 10px;
@@ -78,4 +78,72 @@
     display: block;
     line-height: 30px;
   }
+}
+.index-floor2 .floor2-content {
+  padding-top: 47px;
+  width: 100%;
+  height: 385px;
+  text-align: center;
+  box-sizing: border-box;
+  background: #273142;
+}
+.index-floor2 .floor2-content .btn-left,
+.index-floor2 .floor2-content .btn-right,
+.index-floor2 .floor2-content .banner {
+  display: inline-block;
+  vertical-align: middle;
+  height: 283px;
+}
+.index-floor2 .floor2-content .btn-left,
+.index-floor2 .floor2-content .btn-right {
+  margin: 0 30px;
+  width: 57px;
+  background: #3D4655;
+}
+.index-floor2 .floor2-content .banner {
+  width: calc(100% - 245px);
+}
+.index-floor2 .floor2-content .banner ul {
+  height: 100%;
+}
+.index-floor2 .floor2-content .banner ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 15px;
+  width: calc(50% - 35px);
+  height: 100%;
+  text-align: left;
+  background: #3D4655;
+}
+.index-floor2 .floor2-content .banner ul li h6 {
+  padding: 22px 0 0 18px;
+  font-size: 14px;
+  color: #fff;
+}
+.index-floor2 .floor2-content .banner ul li .banner-content,
+.index-floor2 .floor2-content .banner ul li .banner-echart {
+  display: inline-block;
+  vertical-align: middle;
+  width: 49%;
+  height: 240px;
+  box-sizing: border-box;
+}
+.index-floor2 .floor2-content .banner ul li .banner-content {
+  padding: 22px 0 0 18px;
+}
+.index-floor2 .floor2-content .banner ul li .banner-content p {
+  line-height: 20px;
+  font-size: 14px;
+  color: #C4C5C6;
+}
+.index-floor2 .floor2-content .banner ul li .banner-content p label {
+  float: left;
+  width: 28%;
+  text-align: right;
+}
+.index-floor2 .floor2-content .banner ul li .banner-content p span {
+  float: left;
+  padding-left: 20px;
+  width: 72%;
+  box-sizing: border-box;
 }

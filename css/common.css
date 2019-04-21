@@ -318,3 +318,70 @@ html {
   width: 20px;
   height: 20px;
 }
+.foot-btn-box {
+  height: 80px;
+  background-color: #F0F3F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot-btn-box .custom-start-task-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 110px;
+  width: 128px;
+  height: 34px;
+  background-color: #165ABB;
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+}
+.foot-btn-box .custom-start-task-btn .confirm {
+  width: 100px;
+  text-align: center;
+}
+.foot-btn-box .custom-start-task-btn .confirm img.icon {
+  width: 18px;
+  height: auto;
+  margin-right: 3px;
+}
+.foot-btn-box .custom-start-task-btn .drop-down {
+  width: 28px;
+  height: 100%;
+}
+.foot-btn-box .custom-start-task-btn .drop-down i.triangle {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 8px solid #fff;
+  position: relative;
+  top: 21px;
+  right: -8px;
+}
+.foot-btn-box .custom-start-task-btn .down {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 34px;
+  top: 34px;
+  background-color: #2A6ECE;
+  text-align: center;
+  line-height: 34px;
+}
+.foot-btn-box .common-btn {
+  display: flex;
+  width: 88px;
+  height: 34px;
+  margin-right: 110px;
+  color: #fff;
+  background-color: #0948A2;
+  justify-content: center;
+  align-items: center;
+}
+.foot-btn-box .common-btn img.icon {
+  width: 18px;
+  height: auto;
+  margin-right: 8px;
+}

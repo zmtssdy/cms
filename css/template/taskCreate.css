@@ -1,0 +1,180 @@
+/*
+ * @Author: xuwenkang
+ * @Description: 任务新建页面, 添加预案，添加终端样式
+ * @Date: 2019-04-21 13:21:42
+ * @Last Modified by: xuwenkang
+ * @Last Modified time: 2019-04-21 15:11:40
+*/
+.task-create-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 30px;
+  background-color: #fff;
+}
+.task-create-box .left {
+  width: calc(50% - 50px);
+}
+.task-create-box .right {
+  width: calc(50% - 50px);
+}
+.task-create-box .module-box {
+  margin-bottom: 32px;
+}
+.task-create-box .module-box .module-content {
+  width: 100%;
+  background-color: #F0F3F9;
+  font-size: 14px;
+  color: #435573;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.task-create-box .task-name {
+  padding: 0 16px;
+  height: 46px;
+  line-height: 46px;
+}
+.task-create-box .task-name input {
+  border: none;
+  background: none;
+  height: 46px;
+  width: 100%;
+}
+.task-create-box .setting {
+  padding: 24px;
+}
+.task-create-box .content-line {
+  display: flex;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed #E2E6EF;
+}
+.task-create-box .content-line .label {
+  width: 72px;
+  text-align: right;
+  margin-right: 36px;
+}
+.task-create-box .content-line .check-box {
+  display: flex;
+}
+.task-create-box .content-line .check-box .check-item {
+  margin-right: 48px;
+}
+.task-create-box .content-line .check-box .check-item input {
+  margin-right: 8px;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+}
+.task-create-box .content-line .check-box .check-item span {
+  vertical-align: middle;
+}
+.task-create-box .input-block {
+  margin-bottom: 28px;
+  padding: 18px 26px;
+  background-color: #fff;
+}
+.task-create-box .input-block .input-line {
+  margin-bottom: 10px;
+  height: 30px;
+  display: flex;
+  line-height: 30px;
+  align-items: center;
+}
+.task-create-box .input-block .input-line .label {
+  width: 110px;
+  height: 100%;
+  box-sizing: border-box;
+  padding-right: 22px;
+  text-align: right;
+  color: #435573;
+}
+.task-create-box .input-block .input-line .label input {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.task-create-box .input-block .input-line .label span {
+  vertical-align: middle;
+}
+.task-create-box .input-block .input-line .value {
+  width: calc(100% - 110px);
+  height: 100%;
+}
+.task-create-box .input-block .input-line .value input {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding-left: 16px;
+  background-color: #F0F3F9;
+}
+.task-create-box .input-block .input-line .value select {
+  -webkit-appearance: menulist;
+  height: 100%;
+  width: 100%;
+  background-color: #F0F3F9;
+  padding-left: 15px;
+}
+.task-create-box .input-block .input-line .value.half {
+  display: flex;
+  justify-content: space-between;
+}
+.task-create-box .input-block .input-line .value.half select {
+  width: calc(50% - 8px);
+}
+.task-create-box .input-block .input-line .value.half input {
+  width: calc(50% - 8px);
+}
+.task-create-box .input-block .input-line.checkbox-line {
+  height: auto;
+  align-items: flex-start;
+}
+.task-create-box .input-block .input-line.checkbox-line .checkbox-group {
+  width: calc(100% - 110px);
+}
+.task-create-box .input-block .input-line.checkbox-line .checkbox-group .check-item-line input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin-right: 15px;
+}
+.task-create-box .input-block .input-line.checkbox-line .checkbox-group .check-item-line input[type="text"] {
+  width: 60px;
+  border: none;
+  height: 28px;
+  background-color: #F0F3F9;
+}
+.task-create-box .input-block .input-line.checkbox-line .checkbox-group .check-item-line .cut {
+  margin-left: 10px;
+}
+.task-create-box .input-block.no-margin {
+  margin: 0;
+}
+.task-create-box .item-title {
+  margin-bottom: 14px;
+  font-size: 16px;
+  color: #165ABB;
+}
+.task-create-box .item-title .color-quite {
+  display: inline-block;
+  width: 4px;
+  height: 16px;
+  background-color: #165ABB;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.task-create-box .item-title .title-name {
+  vertical-align: middle;
+}
+.task-create-box .task-type {
+  height: 46px;
+  line-height: 46px;
+}
+.task-create-box .task-type select {
+  padding: 0 16px;
+  height: 100%;
+  width: 100%;
+  -webkit-appearance: menulist;
+  background: none;
+}

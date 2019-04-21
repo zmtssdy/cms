@@ -1,0 +1,70 @@
+/*
+ * @Author: xuwenkang
+ * @Description: 版本信息页面样式
+ * @Date: 2019-04-21 18:10:09
+ * @Last Modified by: xuwenkang
+ * @Last Modified time: 2019-04-21 18:20:54
+*/
+.version-info-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 30px;
+  background: #fff;
+}
+.version-info-box .module-box {
+  margin-bottom: 32px;
+  width: calc(50% - 50px);
+}
+.version-info-box .module-box .item-title {
+  margin-bottom: 14px;
+  font-size: 16px;
+  color: #165ABB;
+}
+.version-info-box .module-box .item-title .color-quite {
+  display: inline-block;
+  width: 4px;
+  height: 16px;
+  background-color: #165ABB;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.version-info-box .module-box .item-title .title-name {
+  vertical-align: middle;
+}
+.version-info-box .module-box .module-content {
+  height: 236px;
+  padding: 0px 30px;
+  width: 100%;
+  background-color: #F0F3F9;
+  font-size: 14px;
+  color: #435573;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.version-info-box .module-box .module-content .content-line {
+  display: flex;
+  align-items: center;
+  height: 57px;
+  border-bottom: 1px dashed #E2E6EF;
+  font-size: 14px;
+  color: #435573;
+}
+.version-info-box .module-box .module-content .content-line .label {
+  padding-right: 15px;
+  width: 88px;
+  box-sizing: border-box;
+  text-align: right;
+}
+.version-info-box .module-box .module-content .content-line a.btn {
+  width: 66px;
+  height: 28px;
+  background-color: #165ABB;
+  color: #fff;
+  text-align: center;
+  line-height: 28px;
+}
+.version-info-box .module-box .module-content .content-line.no-bottom-line {
+  border-bottom: none;
+}

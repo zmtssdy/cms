@@ -1,0 +1,83 @@
+/*
+ * @Author: xuwenkang
+ * @Description: 设备管理样式
+ * @Date: 2019-04-21 18:41:45
+ * @Last Modified by: xuwenkang
+ * @Last Modified time: 2019-04-21 19:21:09
+*/
+.device-manage-box {
+  margin-top: 46px;
+}
+.device-manage-box .item-title {
+  display: flex;
+  align-items: center;
+  padding-left: 11px;
+  height: 50px;
+  background-color: #10182A;
+}
+.device-manage-box .item-title .color-quite {
+  margin-right: 8px;
+  width: 4px;
+  height: 16px;
+  background-color: #E2E6EF;
+}
+.device-manage-box .item-title .title-name {
+  font-size: 14px;
+  color: #fff;
+}
+.device-manage-box .device-content {
+  padding: 44px;
+  background-color: #273142;
+}
+.device-manage-box .device-content table {
+  margin-bottom: 40px;
+  width: 100%;
+  border-top: 1px solid #303C4F;
+  border-left: 1px solid #303C4F;
+}
+.device-manage-box .device-content table .input {
+  width: 53px;
+  height: 44px;
+}
+.device-manage-box .device-content table tr {
+  border-bottom: 1px solid #303C4F;
+}
+.device-manage-box .device-content table tr.active {
+  background-color: #3D4655;
+}
+.device-manage-box .device-content table th {
+  border-right: 1px solid #303C4F;
+  color: #fff;
+  font-weight: normal;
+}
+.device-manage-box .device-content table td {
+  border-right: 1px solid #303C4F;
+  color: #9A9CA0;
+  text-align: center;
+}
+.device-manage-box .device-content table td a {
+  color: #9A9CA0;
+}
+.device-manage-box .device-content .option-box {
+  display: flex;
+  justify-content: space-around;
+  max-width: 110px;
+  margin: 0 auto;
+}
+.device-manage-box .device-content .chart-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.device-manage-box .device-content .chart-box .left {
+  width: 70%;
+  text-align: center;
+}
+.device-manage-box .device-content .chart-box .right {
+  width: 30%;
+  text-align: center;
+}
+.device-manage-box .device-content .chart-box img {
+  max-width: 100%;
+  height: auto;
+}

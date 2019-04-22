@@ -1,6 +1,9 @@
 .m-mian {
   padding: 0 0 20px !important;
 }
+.m-mian .content {
+  padding: 0 !important;
+}
 .m-mian .gggl-floor1 {
   width: 100%;
   height: 50px;
@@ -80,7 +83,7 @@
 .m-mian .gggl-floor2 .gggl-content .gggl-index .gggl-title {
   position: relative;
 }
-.m-mian .gggl-floor2 .gggl-content .gggl-index .gggl-title i {
+.m-mian .gggl-floor2 .gggl-content .gggl-index .gggl-title input {
   display: inline-block;
   vertical-align: middle;
   width: 16px;

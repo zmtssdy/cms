@@ -1,6 +1,9 @@
 .m-mian {
   padding: 0 0 20px !important;
 }
+.m-mian .content {
+  padding: 0 !important;
+}
 .m-mian .plan-floor1 {
   width: 100%;
   height: 50px;

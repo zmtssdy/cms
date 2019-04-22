@@ -1,8 +1,12 @@
 .m-mian {
+  position: relative;
   padding: 0 0 20px !important;
   background: #E2E6EF;
 }
 .m-mian .plan-floor1 {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 50px;
   background: #fff;
@@ -27,10 +31,12 @@
 }
 .m-mian .user-floor2 {
   position: relative;
+  padding-top: 50px;
   width: 100%;
   height: 600px;
   top: 0;
   left: 0;
+  box-sizing: border-box;
 }
 .m-mian .user-floor2 .user1-1 {
   position: absolute;
@@ -89,7 +95,7 @@
   height: 50px;
   line-height: 50px;
 }
-.m-mian .user-floor2 .user1-1 .user-content .content ul li i {
+.m-mian .user-floor2 .user1-1 .user-content .content ul li input {
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;

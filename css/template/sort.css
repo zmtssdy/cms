@@ -21,13 +21,48 @@
   vertical-align: middle;
   width: 24px;
   height: 24px;
-  background: url('../../../img/title-users.png') no-repeat center;
+  background: url('../../img/title-classify.png') no-repeat center;
 }
 .m-mian .content .plan-floor1 .floor-one span {
   display: inline-block;
   font-size: 14px;
   color: #165ABB;
   cursor: pointer;
+}
+.m-mian .content .plan-floor1 .floor-two {
+  float: right;
+}
+.m-mian .content .plan-floor1 .floor-two ul {
+  list-style: none;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.m-mian .content .plan-floor1 .floor-two ul li {
+  float: right;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  width: auto;
+  line-height: 20px;
+  border-right: 2px solid #fff;
+  font-size: 14px;
+  font-family: 'MicrosoftYaHei';
+  font-weight: 400;
+  color: #273142;
+  background: #f0f3f9;
+  cursor: pointer;
+}
+.m-mian .content .plan-floor1 .floor-two ul li input {
+  border: none;
+  line-height: 20px;
+  background: #f0f3f9;
+  color: #A2A8B1;
+}
+.m-mian .content .plan-floor1 .floor-two ul li .floor-search {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  background: url(../../img/icon-search.png) no-repeat center;
 }
 .m-mian .content .zzjg-floor {
   padding: 20px;
@@ -94,14 +129,14 @@
   vertical-align: middle;
   width: 17px;
   height: 17px;
-  background: url('../../../img/icon-add.png') no-repeat center;
+  background: url('../../img/icon-add.png') no-repeat center;
 }
 .m-mian .content .zzjg-floor .down-box ul li .remove {
   display: inline-block;
   vertical-align: middle;
   width: 17px;
   height: 17px;
-  background: url('../../../img/icon-delete.png') no-repeat center;
+  background: url('../../img/icon-delete.png') no-repeat center;
 }
 .m-mian .content .zzjg-floor .down-box ul li .open {
   display: inline-block;
@@ -109,7 +144,7 @@
   margin: 0 10px 0 -8px;
   width: 17px;
   height: 17px;
-  background: url('../../../img/icon-delete.png') no-repeat center;
+  background: url('../../img/icon-delete.png') no-repeat center;
 }
 .m-mian .content .zzjg-floor .down-box ul li .node-two li {
   position: relative;

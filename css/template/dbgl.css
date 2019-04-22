@@ -1,0 +1,198 @@
+.dbgl {
+  background: #E2E6EF;
+  padding: 0 20px;
+}
+.dbgl .content {
+  position: relative;
+  margin-top: 20px;
+  padding: 0 !important;
+}
+.dbgl .content table {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 8px 0px rgba(7, 0, 1, 0.2);
+}
+.dbgl .content table input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.dbgl .content table thead tr {
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  background: #f0f3f9;
+}
+.dbgl .content table thead tr th {
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #273142;
+  text-align: center;
+  border: 0px;
+}
+.dbgl .content table thead tr th:nth-child(1) {
+  width: 60px;
+}
+.dbgl .content table thead tr th:nth-child(2),
+.dbgl .content table thead tr th:nth-child(3) {
+  text-align: left;
+}
+.dbgl .content table tbody {
+  background: #fff;
+}
+.dbgl .content table tbody tr {
+  width: 100%;
+  height: 110px;
+  line-height: 110px;
+  border-bottom: 1px solid #E2E6EF;
+}
+.dbgl .content table tbody tr:hover {
+  box-shadow: 0px 2px 8px 0px rgba(7, 0, 1, 0.2);
+}
+.dbgl .content table tbody tr td {
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #273142;
+  text-align: center;
+}
+.dbgl .content table tbody tr td img {
+  cursor: pointer;
+}
+.dbgl .content table tbody tr td:nth-child(1) {
+  width: 60px;
+}
+.dbgl .content table tbody tr td:nth-child(2),
+.dbgl .content table tbody tr td:nth-child(3) {
+  text-align: left;
+}
+.dbgl .content table tbody .toolBar {
+  height: 40px !important;
+  line-height: 40px !important;
+}
+.dbgl .content .toolBar {
+  display: none;
+  position: absolute;
+  top: 180px;
+  width: 100% !important;
+  height: 40px;
+  background: #fff;
+  box-shadow: 0px 0px 8px 0px rgba(7, 0, 1, 0.2);
+  z-index: 9;
+}
+.dbgl .content .toolBar ul {
+  width: 100%;
+  height: 40px;
+}
+.dbgl .content .toolBar ul li {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+}
+.dbgl .content .toolBar ul li i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.dbgl .content .toolBar ul li span {
+  position: absolute;
+  top: -1px;
+  left: 31px;
+  color: #273142;
+}
+.dbgl .content .toolBar ul li:hover {
+  background: #f0f3f9;
+}
+.dbgl .content .toolBar ul li:nth-child(1) {
+  right: 650px;
+}
+.dbgl .content .toolBar ul li:nth-child(1) i {
+  left: 22px;
+  background: url("../../img/control-delete.png");
+}
+.dbgl .content .toolBar ul li:nth-child(1) span {
+  left: 47px;
+}
+.dbgl .content .toolBar ul li:nth-child(2) {
+  right: 563px;
+}
+.dbgl .content .toolBar ul li:nth-child(2) i {
+  left: 22px;
+  background: url("../../img/control-edit.png");
+}
+.dbgl .content .toolBar ul li:nth-child(2) span {
+  left: 47px;
+}
+.dbgl .content .toolBar ul li:nth-child(3) {
+  right: 460px;
+}
+.dbgl .content .toolBar ul li:nth-child(3) i {
+  background: url("../../img/control-publish.png");
+}
+.dbgl .content .toolBar ul li:nth-child(4) {
+  right: 350px;
+}
+.dbgl .content .toolBar ul li:nth-child(4) i {
+  background: url("../../img/control-lock.png");
+}
+.dbgl .content .toolBar ul li:nth-child(5) {
+  right: 240px;
+}
+.dbgl .content .toolBar ul li:nth-child(5) i {
+  background: url("../../img/control-download.png");
+}
+.dbgl .content .toolBar ul li:nth-child(6) {
+  right: 130px;
+}
+.dbgl .content .toolBar ul li:nth-child(6) i {
+  background: url("../../img/control-star.png");
+}
+.dbgl .content .toolBar ul li:nth-child(7) {
+  right: 20px;
+}
+.dbgl .content .toolBar ul li:nth-child(7) i {
+  background: url("../../img/control-link.png");
+}
+.dbgl .content #fenye {
+  height: 96px;
+  line-height: 102px;
+  text-align: center;
+  background: #fff;
+}
+.dbgl .content #fenye .layui-disabled {
+  background: #fff !important;
+}
+.dbgl-play {
+  display: none;
+  position: absolute !important;
+  width: 100%;
+  height: 100%;
+  background: rgba(124, 124, 124, 0.5);
+  z-index: 99;
+}
+.dbgl-play img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 924px;
+  height: 520px;
+  background: #fff;
+}
+.layui-layer-content {
+  line-height: 160px;
+  text-align: center;
+  color: #435573;
+}
+.layui-layer-btn,
+.layui-layer-title {
+  background: #f0f3f9 !important;
+}

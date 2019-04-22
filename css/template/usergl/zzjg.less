@@ -27,6 +27,121 @@
                 }
             }
         }
+        .zzjg-floor {
+            padding: 20px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 600px;
+            background: #fff;
+            overflow-y: auto;
+            .zzjg-title {
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                text-indent: 10px;
+                color: #273142;
+                font-size: 14px;
+                background: #FFF0F3F9;
+            }
+            .down-box {
+                padding: 10px 15px;
+                box-sizing: border-box;
+                width: 100%;
+                height: auto;
+                .addTitle {
+                    width: 110px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    color: #fff;
+                    background: #357BDE;
+                    font-size: 14px;
+                }
+                ul {
+                    // padding: 10px 0;
+                    list-style-type: none;
+                    box-sizing: border-box;
+                    li {
+                        width: auto;
+                        height: auto;
+                        .title-one {
+                            display: inline-block;
+                            margin-top: 20px;
+                            width: 268px;
+                            height: 30px;
+                            line-height: 30px;
+                            text-indent: 15px;
+                            background:rgba(226,230,239,1)
+                        }
+                        .title-two {
+                            display: inline-block;
+                            width: 120px;
+                            height: 30px;
+                            line-height: 30px;
+                            text-indent: 15px;
+                            background:rgba(226,230,239,1)
+                        }
+                        .add {
+                            display: inline-block;
+                            margin: 0 10px;
+                            box-sizing: border-box;
+                            vertical-align: middle;
+                            width: 17px;
+                            height: 17px;
+                            background: url('../../../img/icon-add.png') no-repeat center;
+                        }
+                        .remove {
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 17px;
+                            height: 17px;
+                            background: url('../../../img/icon-delete.png') no-repeat center;
+                        }
+                        .open {
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin: 0 10px 0 -8px;
+                            width: 17px;
+                            height: 17px;
+                            background: url('../../../img/icon-delete.png') no-repeat center;
+                        }
+                        .node-two {
+                            li {
+                                position: relative;
+                                padding-left: 30px;
+                                border-left: 1px dashed #FF15C5FF;
+                                box-sizing: border-box;
+                            }
+                            li::before {
+                                position: absolute;
+                                top: 35px;
+                                left: 1px;
+                                content: '';
+                                border: 1px dashed #FF15C5FF;
+                                width: 17px;
+                            }
+                            .node-three {
+                                li {
+                                    position: relative;
+                                    padding-left: 30px;
+                                    border-left: 1px dashed #FF15C5FF;
+                                    box-sizing: border-box;
+                                    li::before {
+                                        position: absolute;
+                                        top: -10px;
+                                        left: 5px;
+                                        content: '';
+                                        border: 1px dashed #FF15C5FF;
+                                        width: 17px;
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
     }
     
 }

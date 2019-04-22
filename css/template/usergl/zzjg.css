@@ -139,3 +139,15 @@
   border: 1px dashed #FF15C5FF;
   width: 17px;
 }
+.m-mian .content .zzjg-floor .down-box ul li .active-open .node-three {
+  display: block;
+}
+.m-mian .content .zzjg-floor .down-box ul li .active-close .node-three {
+  display: none;
+}
+.m-mian .content .zzjg-floor .down-box .active-off .node-two {
+  display: none;
+}
+.m-mian .content .zzjg-floor .down-box .active-one .node-two {
+  display: block;
+}

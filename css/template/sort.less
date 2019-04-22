@@ -141,6 +141,14 @@
                             height: 17px;
                             background: url('../../img/icon-delete.png') no-repeat center;
                         }
+                        .close {
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin: 0 10px 0 -8px;
+                            width: 17px;
+                            height: 17px;
+                            background: url('../../img/icon-add.png') no-repeat center;
+                        }
                         .node-two {
                             li {
                                 position: relative;
@@ -173,8 +181,19 @@
                                 }
                             }
                         }
-                       
+                        .active-open .node-three {
+                            display: block;
+                        }
+                        .active-close .node-three {
+                            display: none;
+                        }
                     }
+                }
+                .active-off .node-two{
+                    display: none;
+                }
+                .active-one .node-two {
+                    display: block;
                 }
             }
         }

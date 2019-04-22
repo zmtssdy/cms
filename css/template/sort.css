@@ -146,6 +146,14 @@
   height: 17px;
   background: url('../../img/icon-delete.png') no-repeat center;
 }
+.m-mian .content .zzjg-floor .down-box ul li .close {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px 0 -8px;
+  width: 17px;
+  height: 17px;
+  background: url('../../img/icon-add.png') no-repeat center;
+}
 .m-mian .content .zzjg-floor .down-box ul li .node-two li {
   position: relative;
   padding-left: 30px;
@@ -173,4 +181,16 @@
   content: '';
   border: 1px dashed #FF15C5FF;
   width: 17px;
+}
+.m-mian .content .zzjg-floor .down-box ul li .active-open .node-three {
+  display: block;
+}
+.m-mian .content .zzjg-floor .down-box ul li .active-close .node-three {
+  display: none;
+}
+.m-mian .content .zzjg-floor .down-box .active-off .node-two {
+  display: none;
+}
+.m-mian .content .zzjg-floor .down-box .active-one .node-two {
+  display: block;
 }

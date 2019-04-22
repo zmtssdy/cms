@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cms首页</title>
+    <link rel="stylesheet" href="../layui/css/layui.mobile.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/template/xqEdit.css">
+</head>
+<body>
+    <!-- 公用布局模块 -->
+    <div class="module">
+        <!-- 公用头部 -->
+        <div class="m-top">
+            <div class="logo">CHAORAN</div>
+            <div class="top-title">
+                <span>超然多媒体管理后台</span>
+                <ul>
+                    <li class="active">多媒体管理</li>
+                    <li>录制管理</li>
+                </ul>
+            </div>
+            <div class="top-right">
+                <ul>
+                    <li class="top-user">
+                        <a href="javascript:void(0);">
+                            <i></i>
+                            <span>user890090</span>
+                        </a>
+                    </li>
+                    <li class="top-index active">
+                        <a href="javascript:void(0);">
+                            <i></i>
+                            <span>主页</span>
+                        </a>
+                    </li>
+                    <li class="top-set">
+                        <a href="javascript:void(0);">
+                            <i></i>
+                            <span>设置</span>
+                            <em></em>
+                            <div class="hover-set">
+                                <div class="hover-set-triangle"></div>
+                                <dl>
+                                    <dd>
+                                        <b class="hover-set-p"></b>
+                                        <label>修改密码</label>
+                                    </dd>
+                                    <dd>
+                                        <b class="hover-set-v"></b>
+                                        <label>版本信息</label>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="top-exit">
+                        <a href="javascript:void(0);">
+                            <i></i>
+                            <span>退出</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 公用菜单栏 -->
+        <div class="m-left">
+            <ul class="layui-nav layui-nav-tree layui-bg-cyan layui-inline" lay-filter="demo">
+                <li class="layui-nav-item"><a href=""><i class="icon-dbgl"></i>点播管理</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;"><i class="icon-zbgl"></i>直播管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">正在直播</a></dd>
+                        <dd><a href="">历史直播</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href=""><i class="icon-plgl"></i>评论管理</a></li>
+                <li class="layui-nav-item"><a href=""><i class="icon-flgl"></i>分类管理</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;"><i class="icon-yhgl"></i>用户管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">组织结构</a></dd>
+                        <dd><a href="">用户管理</a></dd>
+                        <dd><a href="">外部认证</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <!-- 公用内容块 -->
+        <div class="m-mian">
+            <div class="top-bra">
+                <div class="left-box">
+                    <img class="icon" src="../img/planManage/icon-plan@2x.png" alt="">
+                    <a href="" class="text">点播管理</a>
+                    <i class="arrow">></i>
+                    <a href="" class="text">编辑详情</a>
+                </div>
+                <div class="right-box">
+                        <a href="" class="button">批量删除</a>
+                        <a href="javascript:;" class="button" id="search">精确查询</a>
+                        <div class="search-box">
+                            <input class="search-input" type="text" placeholder="输入关键字搜索" />
+                            <a class="search-btn" href=""><img src="../img/common/icon-search@2x.png" alt=""></a>
+                        </div>
+                    </div>
+            </div>
+            <!-- 页面内容存放区域 -->
+            <div class="content">
+                <div class="task-create-box" id="task-create-box2">
+                    <div class="left">
+                        <div class="module-box">
+                            <div class="item-title">
+                                <i class="color-quite"></i>
+                                <span class="title-name">节目名称</span>
+                            </div>
+                            <div class="module-content task-name">
+                                <input type="text">
+                                <span class="value" style="display: none;"></span>
+                            </div>
+                        </div>
+                        <div class="module-box">
+                            <div class="item-title">
+                                <i class="color-quite"></i>
+                                <span class="title-name">节目简介</span>
+                            </div>
+                            <div class="module-content task-name">
+                                <input type="text">
+                                <span class="value" style="display: none;"></span>
+                            </div>
+                        </div>
+                        <div class="module-box">
+                            <div class="item-title">
+                                <i class="color-quite"></i>
+                                <span class="title-name">标签（多个标签之间用逗号隔开）</span>
+                            </div>
+                            <div class="module-content task-name">
+                                <input type="text">
+                                <span class="value" style="display: none;"></span>
+                            </div>
+                        </div>
+                        <div class="module-box">
+                            <div class="item-title">
+                                <i class="color-quite"></i>
+                                <span class="title-name">设置</span>
+                            </div>
+                            <div class="module-content setting">
+                                <div class="content-line">
+                                    <span class="label">设置密码</span>
+                                    <div class="check-box">
+                                        <div class="check-item">
+                                            <label for="">
+                                                <input type="checkbox" />
+                                                <span>是</span>
+                                            </label>
+                                        </div>
+                                        <div class="check-item">
+                                            <label for="">
+                                                <input type="checkbox" />
+                                                <span>否</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-line">
+                                    <span class="label">允许评论</span>
+                                    <div class="check-box">
+                                        <div class="check-item">
+                                            <label for="">
+                                                <input type="checkbox" />
+                                                <span>是</span>
+                                            </label>
+                                        </div>
+                                        <div class="check-item">
+                                            <label for="">
+                                                <input type="checkbox" />
+                                                <span>否</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-line">
+                                    <span class="label">发布</span>
+                                    <div class="check-box">
+                                        <div class="check-item">
+                                            <label for="">
+                                                <input type="checkbox" />
+                                                <span>是</span>
+                                            </label>
+                                        </div>
+                                        <div class="check-item">
+                                            <label for="">
+                                                <input type="checkbox" />
+                                                <span>否</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-line">
+                                    <span class="label">允许评分</span>
+                                    <div class="check-box">
+                                        <div class="check-item">
+                                            <label for="">
+                                                <input type="checkbox" />
+                                                <span>是</span>
+                                            </label>
+                                        </div>
+                                        <div class="check-item">
+                                            <label for="">
+                                                <input type="checkbox" />
+                                                <span>否</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-line">
+                                    <span class="label">下载</span>
+                                    <div class="check-box">
+                                        <div class="check-item">
+                                            <label for="">
+                                                <input type="checkbox" />
+                                                <span>是</span>
+                                            </label>
+                                        </div>
+                                        <div class="check-item">
+                                            <label for="">
+                                                <input type="checkbox" />
+                                                <span>否</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-line">
+                                    <span class="label">推荐视频</span>
+                                    <div class="check-box">
+                                        <div class="check-item">
+                                            <label for="">
+                                                <input type="checkbox" />
+                                                <span>是</span>
+                                            </label>
+                                        </div>
+                                        <div class="check-item">
+                                            <label for="">
+                                                <input type="checkbox" />
+                                                <span>否</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="module-box">
+                            <div class="item-title">
+                                <i class="color-quite"></i>
+                                <span class="title-name">图片设置</span>
+                            </div>
+                            <div class="module-content setting pictures">
+                                <div class="tjspt">
+                                    <p>推荐视频图</p>
+                                    <img src="../img/suoluetu.png" alt="" srcset="">
+                                    <p class="subTitle">尺寸XXX</p>
+                                </div>
+                                <div class="jmslt">
+                                    <p>节目缩略图</p>
+                                    <img src="../img/suoluetu.png" alt="" srcset="">
+                                    <p class="subTitle">尺寸XXX</p>
+                                </div>
+                            </div>
+                        <div class="module-box">
+                                <div class="item-title">
+                                    <i class="color-quite"></i>
+                                    <span class="title-name">分类设置</span>
+                                </div>
+                                <div class="module-content setting ">
+                                    <div class="content-line2">
+                                        <div class="check-item">
+                                            <label for="">
+                                                <input type="checkbox" />
+                                                <span>分类名称</span>
+                                            </label>
+                                            <label for="">
+                                                <input type="checkbox" />
+                                                <span>分类名称</span>
+                                            </label>
+                                            <label for="">
+                                                <input type="checkbox" />
+                                                <span>分类名称</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="content-line2">
+                                        <div class="check-item">
+                                            <label for="">
+                                                <input type="checkbox" />
+                                                <span>分类名称</span>
+                                            </label>
+                                            <label for="">
+                                                <input type="checkbox" />
+                                                <span>分类名称</span>
+                                            </label>
+                                            <label for="">
+                                                <input type="checkbox" />
+                                                <span>分类名称</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="content-line2">
+                                        <div class="check-item">
+                                            <label for="">
+                                                <input type="checkbox" />
+                                                <span>分类名称</span>
+                                            </label>
+                                            <label for="">
+                                                <input type="checkbox" />
+                                                <span>分类名称</span>
+                                            </label>
+                                            <label for="">
+                                                <input type="checkbox" />
+                                                <span>分类名称</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot-btn-box">
+                    <a href="" class="common-btn">
+                        <img class="icon" src="../img/common/icon-confirm@2x.png" alt="" />
+                        <span>确定</span>
+                    </a>
+                    <a href="" class="common-btn">
+                        <img class="icon" src="../img/common/icon-cancel@2x.png" alt="" />
+                        <span>取消</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../layui/layui.all.js"></script>
+<script src="../js/template/xqEdit.js"></script>
+</html>

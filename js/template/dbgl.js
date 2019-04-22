@@ -1,6 +1,7 @@
 $(function() {
-    layui.use(['laypage', 'layer'], function () {
+    layui.use(['laypage', 'layer','laydate'], function () {
         var laypage = layui.laypage
+            ,laydate = layui.laydate
             , layer = layui.layer;
 
         //总页数低于页码总数
@@ -27,6 +28,97 @@ $(function() {
             }
         });
         })
+
+        $('#search').click(function() {
+            layer.open({
+            type: 1,
+            title:'精确查询'
+            ,area: ['566px', '400px']
+            // ,offset: type //具体配置参考：http://www.layui.com/doc/modules/layer.html#offset
+            // ,id: 'layerDemo'+type //防止重复弹出
+            ,content: '<div class="jqcx">'+
+            '<div>'+
+                '<label for="">开始时间</label>'+
+                '<input type="text" id="startTime" autocomplete="off" placeholder="请选择时间">'+
+                ''+
+            '</div>'+
+            '<div>'+
+                '<label for="">结束时间</label>'+
+                '<input type="text" id="endTime" autocomplete="off" placeholder="请选择时间">'+
+            '</div>'+
+            '<div>'+
+                '<label for="">生成时间</label>'+
+                '<input type="text" id="scTime" autocomplete="off" placeholder="请选择时间">'+
+            '</div>'+
+            '<div>'+
+                '<label for="">状态</label>'+
+                '<select name="" id=""><option value="">222</option></select>'+
+            '</div>'+
+        '</div>'
+            ,btn: ['确定','取消']
+            ,btnAlign: 'c' //按钮居中
+            // ,shade: 0 //不显示遮罩
+            ,yes: function(){
+            layer.closeAll();
+            }
+        });
+
+        //日期
+        laydate.render({
+            elem: '#startTime'
+        });
+
+        laydate.render({
+            elem: '#endTime'
+        });
+
+        laydate.render({
+            elem: '#scTime'
+        });
+        })
+
+
+        $('.dbgl .content .toolBar ul .shareLink').click(function() {
+            layer.open({
+            type: 1,
+            title:'分享链接'
+            ,area: ['566px', '260px']
+            // ,offset: type //具体配置参考：http://www.layui.com/doc/modules/layer.html#offset
+            // ,id: 'layerDemo'+type //防止重复弹出
+            ,content: '<div class="fxlj">'+
+            '<div>'+
+                '<label for="">链接地址</label>'+
+                '<input type="text" id="linkAdress" autocomplete="off" placeholder="https://www.huxiu.com/article/289...">'+
+                '<div class="erweima">'+
+                '</div>'+
+            '</div>'+
+            '<div class="icons">'+
+                '<span>'+
+                    '<i></i><i></i><i></i><i></i>'+
+                '</span>'+
+            '</div>'+
+        '</div>'
+            ,btn: ['确定','取消']
+            ,btnAlign: 'c' //按钮居中
+            // ,shade: 0 //不显示遮罩
+            ,yes: function(){
+            layer.closeAll();
+            }
+        });
+
+        $('#linkAdress').hover(function() {
+            $('.erweima').show();
+        },function() {
+            $('.erweima').hide();
+        })
+
+        $('.erweima').hover(function(el) {
+            el.preventDefault();
+            el.stopPropagation();
+        })
+        })
+
+
     })
 
     //第一列不进行排序(索引从0开始) 
@@ -54,9 +146,9 @@ $(function() {
     })
 
     //蒙层
-    // $('.dbgl .content table tbody tr td img').click(function() {
-    //     $('.dbgl-play').show();
-    // })
+    $('.dbgl .content table tbody tr td img').click(function() {
+        $('.dbgl-play').show();
+    })
 
     $('.dbgl .content table tbody tr').eq(0).hover(function(el) {
         el.stopPropagation();
@@ -98,9 +190,9 @@ $(function() {
         $('.dbgl .content .toolBar').hide();
     })
 
-    // $('.dbgl .content table').mouseout(function() {
-    //     alert(1111)
-    //     $('.plgl .content .toolBar').css('display','none');
-    // })
+    $('.dbgl .content table').mouseleave(function() {
+        // alert(1111)
+        $('.dbgl .content .toolBar').css('display','none');
+    })
 
 })

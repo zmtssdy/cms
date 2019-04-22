@@ -1,0 +1,166 @@
+.zzzb {
+  background: #E2E6EF;
+  padding: 0 20px;
+}
+.zzzb .content {
+  position: relative;
+  margin-top: 20px;
+  padding: 0 !important;
+}
+.zzzb .content table {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 8px 0px rgba(7, 0, 1, 0.2);
+}
+.zzzb .content table input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.zzzb .content table thead tr {
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  background: #f0f3f9;
+}
+.zzzb .content table thead tr th {
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #273142;
+  text-align: center;
+  border: 0px;
+}
+.zzzb .content table thead tr th:nth-child(1) {
+  width: 60px;
+}
+.zzzb .content table thead tr th:nth-child(2),
+.zzzb .content table thead tr th:nth-child(3) {
+  text-align: left;
+}
+.zzzb .content table tbody {
+  background: #fff;
+}
+.zzzb .content table tbody tr {
+  width: 100%;
+  height: 110px;
+  line-height: 110px;
+  border-bottom: 1px solid #E2E6EF;
+}
+.zzzb .content table tbody tr:hover {
+  box-shadow: 0px 2px 8px 0px rgba(7, 0, 1, 0.2);
+}
+.zzzb .content table tbody tr td {
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #273142;
+  text-align: center;
+}
+.zzzb .content table tbody tr td img {
+  cursor: pointer;
+}
+.zzzb .content table tbody tr td:nth-child(1) {
+  width: 60px;
+}
+.zzzb .content table tbody tr td:nth-child(2),
+.zzzb .content table tbody tr td:nth-child(3) {
+  text-align: left;
+}
+.zzzb .content table tbody .toolBar {
+  height: 40px !important;
+  line-height: 40px !important;
+}
+.zzzb .content .toolBar {
+  display: none;
+  position: absolute;
+  top: 180px;
+  width: 100% !important;
+  height: 40px;
+  background: #fff;
+  box-shadow: 0px 0px 8px 0px rgba(7, 0, 1, 0.2);
+  z-index: 9;
+}
+.zzzb .content .toolBar ul {
+  width: 100%;
+  height: 40px;
+}
+.zzzb .content .toolBar ul li {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+}
+.zzzb .content .toolBar ul li i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.zzzb .content .toolBar ul li span {
+  position: absolute;
+  top: -1px;
+  left: 31px;
+  color: #273142;
+}
+.zzzb .content .toolBar ul li:hover {
+  background: #f0f3f9;
+}
+.zzzb .content .toolBar ul li:nth-child(1) {
+  right: 240px;
+}
+.zzzb .content .toolBar ul li:nth-child(1) i {
+  background: url("../../img/control-stop.png");
+}
+.zzzb .content .toolBar ul li:nth-child(2) {
+  right: 130px;
+}
+.zzzb .content .toolBar ul li:nth-child(2) i {
+  background: url("../../img/control-regain.png");
+}
+.zzzb .content .toolBar ul li:nth-child(3) {
+  right: 20px;
+}
+.zzzb .content .toolBar ul li:nth-child(3) i {
+  background: url("../../img/control-right.png");
+}
+.zzzb .content #fenye {
+  height: 96px;
+  line-height: 102px;
+  text-align: center;
+  background: #fff;
+}
+.zzzb .content #fenye .layui-disabled {
+  background: #fff !important;
+}
+.dbgl-play {
+  display: none;
+  position: absolute !important;
+  width: 100%;
+  height: 100%;
+  background: rgba(124, 124, 124, 0.5);
+  z-index: 99;
+}
+.dbgl-play img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 924px;
+  height: 520px;
+  background: #fff;
+}
+.layui-layer-content {
+  line-height: 160px;
+  text-align: center;
+  color: #435573;
+}
+.layui-layer-btn,
+.layui-layer-title {
+  background: #f0f3f9 !important;
+}

@@ -11,6 +11,7 @@
   width: 100%;
   height: auto;
   box-shadow: 0px 0px 8px 0px rgba(7, 0, 1, 0.2);
+  min-width: 953px;
 }
 .dbgl .content table input {
   width: 16px;
@@ -188,11 +189,121 @@
   background: #fff;
 }
 .layui-layer-content {
-  line-height: 160px;
+  line-height: 138px;
   text-align: center;
   color: #435573;
 }
 .layui-layer-btn,
 .layui-layer-title {
   background: #f0f3f9 !important;
+}
+.jqcx {
+  height: 280px;
+}
+.jqcx div {
+  height: 53px;
+}
+.jqcx div label {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  color: #435573;
+  background: #fff;
+  border: 1px solid #E2E6EF;
+}
+.jqcx div input {
+  box-sizing: border-box;
+  width: 310px;
+  height: 40px;
+  border: 1px solid #E2E6EF;
+  background: #F0F3F9;
+  text-indent: 10px;
+}
+.jqcx div select {
+  -webkit-appearance: menulist;
+  box-sizing: border-box;
+  width: 310px;
+  height: 40px;
+  background-color: #F0F3F9;
+  padding-left: 15px;
+  border: 1px solid #E2E6EF;
+}
+.fxlj {
+  position: relative;
+  height: 130px;
+}
+.fxlj div {
+  margin-top: -22px;
+  height: 53px;
+}
+.fxlj div label {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  color: #435573;
+  background: #fff;
+  border: 1px solid #E2E6EF;
+}
+.fxlj div input {
+  box-sizing: border-box;
+  width: 310px;
+  height: 40px;
+  border: 1px solid #E2E6EF;
+  background: #F0F3F9;
+  text-indent: 10px;
+}
+.fxlj div .erweima {
+  display: none;
+  position: absolute;
+  top: 124px;
+  left: 215px;
+  width: 80px;
+  height: 80px;
+  background: url("../../img/erweima.png");
+}
+.fxlj div span {
+  display: inline-block;
+  width: 115px;
+  height: 24px;
+}
+.fxlj div span i {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: red;
+  margin-right: 2px;
+  cursor: pointer;
+}
+.fxlj div span i:nth-child(1) {
+  background: url("../../img/pic-weibo-normal.png");
+}
+.fxlj div span i:nth-child(1):hover {
+  background: url("../../img/pic-weibo-focus.png");
+}
+.fxlj div span i:nth-child(2) {
+  background: url("../../img/pic-qq-normal.png");
+}
+.fxlj div span i:nth-child(2):hover {
+  background: url("../../img/pic-qq-focus.png");
+}
+.fxlj div span i:nth-child(3) {
+  background: url("../../img/pic-wechat-normal.png");
+}
+.fxlj div span i:nth-child(3):hover {
+  background: url("../../img/pic-wechat-focus.png");
+}
+.fxlj div span i:nth-child(4) {
+  background: url("../../img/pic-moment-normal.png");
+}
+.fxlj div span i:nth-child(4):hover {
+  background: url("../../img/pic-moment-focus.png");
+}
+.fxlj .icons {
+  margin-top: -5px;
+  text-align: left;
+  padding-left: 77px;
 }

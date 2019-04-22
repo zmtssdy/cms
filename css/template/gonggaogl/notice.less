@@ -1,0 +1,202 @@
+.m-mian {
+    padding: 0 0 20px !important;
+    .gggl-floor1 {
+        width:100%;
+        height:50px;
+        background : #fff;
+        .floor-one {
+            float: left;
+            margin-left: 20px;
+            line-height: 50px;
+            i {
+                display: inline-block;
+                vertical-align: middle;
+                width: 24px;
+                height: 24px;
+                background: url('../../../img/title-news.png') no-repeat center;
+            }
+            span {
+                display: inline-block;
+                font-size: 14px;
+                color: #165ABB;
+            }
+        }
+        .floor-two {
+            float: right;
+            ul {
+                list-style: none;
+                margin-top: 10px;
+                margin-right: 20px;
+                li {
+                    float: right;
+                    padding: 5px 10px;
+                    box-sizing: border-box;
+                    width: auto;
+                    line-height: 20px;
+                    border-right: 2px solid #fff;
+                    font-size:14px;
+                    font-family:'MicrosoftYaHei';
+                    font-weight:400;
+                    color:#273142;
+                    background:rgba(240,243,249,1);
+                    cursor: pointer;
+                    input {
+                        border: none;
+                        line-height: 20px;
+                        background: rgba(240,243,249,1);
+                        color: #A2A8B1;
+                    }
+                    .floor-search {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 20px;
+                        height: 20px;
+                        background: url('../../../img/icon-search.png') no-repeat center;
+                    }
+                }
+            }
+        }
+    }
+    .gggl-floor2 {
+        padding: 15px 20px;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        background: #f0f3f9;
+        .gggl-content {
+            margin-bottom: 15px;
+            width: 100%;
+            .gggl-index {
+                padding: 15px;
+                box-sizing: border-box;
+                width: 100%;
+                height: 100px;
+                background: #fff;
+                overflow: hidden;
+                .gggl-title {
+                    position: relative;
+                    i {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width:16px;
+                        height:16px;
+                        background:rgba(176,187,210,1);
+                        border-radius:2px
+                    }
+                    span {
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 16px;
+                        text-indent: 10px;
+                        color: #273142;
+                    }
+                    .button-active {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        cursor: pointer;
+                        em {
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 9px;
+                            height: 6px;
+                        }
+                    }
+                }
+                
+                .time {
+                    width:auto;
+                    height:35px;
+                    font-size:14px;
+                    font-family:'MicrosoftYaHei';
+                    font-weight:400;
+                    color:rgba(117,120,124,1);
+                    line-height:35px;
+                    span {
+                        display: inline-block;
+                        padding-left: 30px;
+                        box-sizing: border-box;
+                        line-height: 35px;
+                    }
+                }
+                .title1-1 {
+                    width: auto;
+                    height: auto;
+                    font-size: 14px;
+                    color: #273142;
+                    padding-left: 30px;
+                    box-sizing: border-box;
+                    span {
+                        line-height: 25px;
+                    }
+                }
+                .title-bottom {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-top: 10px;
+                    margin-left: -20px;
+                    width: 103%;
+                    height: auto;
+                    border-top: 1px solid #E2E6EF;
+                    div {
+                        position: relative;
+                        margin-right: 30px;
+                        min-width: 70px;
+                        height: 30px;
+                        line-height: 45px;
+                        cursor: pointer;
+                        i {
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-right: 5px;
+                            width: 16px;
+                            height: 16px;
+                        }
+                        span {
+                            width: auto;
+                            font-size: 14px;
+                            color: #273142;
+                            font-family: 'MicrosoftYaHei';
+                        }
+                        em {
+                            position: absolute;
+                            top: 15px;
+                            right: 0;
+                            display: inline-block;
+                            width: 1px;
+                            height: 20px;
+                            background: #E2E6EF;
+                        }
+                    }
+                    .delete i {
+                        background: url('../../../img/control-delete.png') no-repeat center;
+                    }
+                    .edit i {
+                        background: url('../../../img/control-edit.png') no-repeat center;
+                    }
+                    .start i {
+                        background: url('../../../img/control-top.png') no-repeat center;
+                    }
+                }
+            }
+            .active-off  em{
+                background: url('../../../img/icon-open.png') no-repeat center;
+            }
+            .active-on {
+                height: auto;
+            }
+            .active-on em {
+                background: url('../../../img/icon-fold.png') no-repeat center;
+            }
+        }  
+        .gggl-content:last-child {
+            margin-bottom: 0px;
+        }
+        .close .active-on {
+            display: none;
+        }
+        .open .active-off{
+            display: none;
+        }
+    }
+}

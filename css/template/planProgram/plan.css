@@ -1,0 +1,226 @@
+.m-mian {
+  padding: 0 0 20px !important;
+}
+.m-mian .plan-floor1 {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+}
+.m-mian .plan-floor1 .floor-one {
+  float: left;
+  margin-left: 20px;
+  line-height: 50px;
+}
+.m-mian .plan-floor1 .floor-one i {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  background: url('../../../img/title-templet.png') no-repeat center;
+}
+.m-mian .plan-floor1 .floor-one span {
+  display: inline-block;
+  font-size: 14px;
+  color: #165ABB;
+}
+.m-mian .plan-floor1 .floor-two {
+  float: right;
+}
+.m-mian .plan-floor1 .floor-two ul {
+  list-style: none;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.m-mian .plan-floor1 .floor-two ul li {
+  float: right;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  width: auto;
+  line-height: 20px;
+  border-right: 2px solid #fff;
+  font-size: 14px;
+  font-family: 'MicrosoftYaHei';
+  font-weight: 400;
+  color: #273142;
+  background: #f0f3f9;
+  cursor: pointer;
+}
+.m-mian .plan-floor1 .floor-two ul li input {
+  border: none;
+  line-height: 20px;
+  background: #f0f3f9;
+  color: #A2A8B1;
+}
+.m-mian .plan-floor1 .floor-two ul li .floor-search {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  background: url(../../../img/icon-search.png) no-repeat center;
+}
+.m-mian .plan-floor2 {
+  display: flex;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  align-content: space-between;
+  flex-wrap: wrap;
+  background: #f0f3f9;
+}
+.m-mian .plan-floor2 .floor2-content {
+  width: auto;
+  height: 310px;
+  overflow: hidden;
+  border-radius: 0 0 10px 10px;
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1 {
+  position: relative;
+  margin: 10px 15px 20px 17px;
+  width: 383px;
+  height: 252px;
+  transition: height 0.3s;
+  background: #ffffff;
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden;
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-title {
+  width: 100%;
+  height: 120px;
+  line-height: 90px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  background: #357BDE;
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-title span {
+  display: inline-block;
+  max-width: 215px;
+  height: 18px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 20px;
+  cursor: pointer;
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-middle {
+  position: absolute;
+  top: 102px;
+  left: 10%;
+  width: 80%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #62666D;
+  background: #fefeff;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.38);
+  cursor: pointer;
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-bottom {
+  width: 100%;
+  height: 132px;
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-bottom ul {
+  padding-top: 30px;
+  box-sizing: border-box;
+  list-style-type: none;
+  width: 100%;
+  height: 30px;
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-bottom ul li {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  justify-content: space-between;
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-bottom ul li .bottom1-index,
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-bottom ul li .bottom2-index {
+  padding-left: 45px;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  box-sizing: border-box;
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-bottom ul li .bottom1-index i,
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-bottom ul li .bottom2-index i {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-bottom ul li .bottom1-index span,
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-bottom ul li .bottom2-index span {
+  padding: 0 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #62666D;
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-bottom ul .active .bottom1-index i {
+  background: url('../../../img/b-broadcast.png') no-repeat center;
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-bottom ul .active .bottom2-index i {
+  background: url('../../../img/b-record.png') no-repeat center;
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-bottom ul .error .bottom1-index i {
+  background: url('../../../img/b-publish.png') no-repeat center;
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-bottom ul .error .bottom2-index i {
+  background: url('../../../img/b-flow.png') no-repeat center;
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-foot {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 48px;
+  text-align: center;
+  border-top: 1px solid #e2e6ef;
+  border-radius: 0 0 10px 10px;
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-foot div {
+  position: relative;
+  width: 33%;
+  height: 48px;
+  line-height: 48px;
+  cursor: pointer;
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-foot div i {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-foot div span {
+  width: auto;
+  font-size: 14px;
+  color: #273142;
+  font-family: 'MicrosoftYaHei';
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-foot div em {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  background: #E2E6EF;
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-foot .delete i {
+  background: url('../../../img/control-delete.png') no-repeat center;
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-foot .edit i {
+  background: url('../../../img/control-edit.png') no-repeat center;
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1 .floor2-foot .start i {
+  background: url('../../../img/control-start.png') no-repeat center;
+}
+.m-mian .plan-floor2 .floor2-content .floor2-1:hover {
+  height: 300px;
+}
+@media screen and (max-width: 1400px) {
+  .plan-floor2 .floor2-1 {
+    width: 330px !important;
+  }
+}

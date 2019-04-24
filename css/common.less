@@ -89,7 +89,7 @@ html {
                         span {
                             display: inline-block;
                             vertical-align: middle;
-                            font-size: 16px;
+                            font-size: 14px;
                             color: #fff;
                         }
                         em {
@@ -208,6 +208,9 @@ html {
         width: 200px;
         height: calc(~"100% - 80px");
         background: #2F4056;
+        .common-nav2 {
+            display: none;
+        }
         ul {
             li {
                 a {
@@ -232,6 +235,18 @@ html {
                     }
                     .icon-yhgl {
                         background: url('../img/i-users.png') no-repeat center;
+                    }
+                    .icon-yagl {
+                        background: url('../img/i-templet.png') no-repeat center;
+                    }
+                    .icon-rwgl {
+                        background: url('../img/i-misson.png') no-repeat center;
+                    }
+                    .icon-zdgl {
+                        background: url('../img/i-terminal.png') no-repeat center;
+                    }
+                    .icon-sbgl {
+                        background: url('../img/i-equip.png') no-repeat center;
                     }
                 }
                 .layui-nav-child {
@@ -258,22 +273,25 @@ html {
 }
 
 // 重置layui导航样式
+.layui-nav-itemed>a {
+    background: #165ABB;
+}
+.layui-nav-itemed .layui-nav-child a {
+    &:hover {
+        background: #0F4399;
+    }
+}
+.layui-nav-item {
+    &:hover {
+        >a {
+            background: #165ABB !important;
+        }
+    }
+}
 .layui-nav-itemed>.layui-nav-child {
     background: #10182A;
-    dd {
-        &:hover {
-            background: #0F4399;
-        }
-    }
 }
 
-.layui-nav-tree .layui-nav-item {
-    a {
-        &:hover {
-            background: #165ABB;
-        }
-    }
-}
 
 .layui-nav-tree .layui-nav-bar {
     display: none;

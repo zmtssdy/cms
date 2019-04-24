@@ -93,7 +93,7 @@ html {
 .module .m-top .top-right ul li a span {
   display: inline-block;
   vertical-align: middle;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
 }
 .module .m-top .top-right ul li a em {
@@ -200,6 +200,9 @@ html {
   height: calc(100% - 80px);
   background: #2F4056;
 }
+.module .m-left .common-nav2 {
+  display: none;
+}
 .module .m-left ul li a i {
   display: inline-block;
   vertical-align: middle;
@@ -222,6 +225,18 @@ html {
 .module .m-left ul li a .icon-yhgl {
   background: url('../img/i-users.png') no-repeat center;
 }
+.module .m-left ul li a .icon-yagl {
+  background: url('../img/i-templet.png') no-repeat center;
+}
+.module .m-left ul li a .icon-rwgl {
+  background: url('../img/i-misson.png') no-repeat center;
+}
+.module .m-left ul li a .icon-zdgl {
+  background: url('../img/i-terminal.png') no-repeat center;
+}
+.module .m-left ul li a .icon-sbgl {
+  background: url('../img/i-equip.png') no-repeat center;
+}
 .module .m-left ul li .layui-nav-child a {
   text-indent: 3.3em;
 }
@@ -238,14 +253,17 @@ html {
   width: 100%;
   box-sizing: border-box;
 }
-.layui-nav-itemed > .layui-nav-child {
-  background: #10182A;
+.layui-nav-itemed > a {
+  background: #165ABB;
 }
-.layui-nav-itemed > .layui-nav-child dd:hover {
+.layui-nav-itemed .layui-nav-child a:hover {
   background: #0F4399;
 }
-.layui-nav-tree .layui-nav-item a:hover {
-  background: #165ABB;
+.layui-nav-item:hover > a {
+  background: #165ABB !important;
+}
+.layui-nav-itemed > .layui-nav-child {
+  background: #10182A;
 }
 .layui-nav-tree .layui-nav-bar {
   display: none;

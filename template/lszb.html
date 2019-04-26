@@ -98,117 +98,137 @@
             </ul>
         </div>
         <!-- 公用内容块 -->
-        <div class="m-mian lszb">
-            <!-- 页面内容存放区域 -->
-            <div class="content">
-
-                <!-- 不同模块 点播部分 -->
-                <div class="toolBar">
-                    <ul>
-                        <li>
-                            <i></i>
-                            <span>暂停直播</span>
-                        </li>
-                        <li>
-                            <i></i>
-                            <span>恢复直播</span>
-                        </li>
-                        <li>
-                            <i></i>
-                            <span>设置权限</span>
-                        </li>
-    
-                    </ul>
+        <div class="m-mian">
+            <!-- 头部工具条 -->
+            <div class="top-bra">
+                    <div class="left-box">
+                        <img class="icon" src="../img/title-broadcast.png" alt="">
+                        <a href="" class="text">直播管理</a>
+                        <i class="arrow">></i>
+                        <a href="" class="text">历史直播</a>
+                    </div>
+                    <div class="right-box">
+                            <a href="" class="button">批量删除</a>
+                            <a href="javascript:;" class="button" id="search">精确查询</a>
+                            <div class="search-box">
+                                <input class="search-input" type="text" placeholder="输入关键字搜索" />
+                                <a class="search-btn" href=""><img src="../img/common/icon-search@2x.png" alt=""></a>
+                            </div>
+                        </div>
                 </div>
 
-                <table id="dbgl-table" class="tablesorter">
-                    <thead>
-                        <tr>
-                            <th>
-                                <input type="checkbox" name="" id="theadInp">
-                            </th>
-                            <th>视频播放</th>
-                            <th>节目名称</th>
-                            <th>节目时长</th>
-                            <th>生成时间</th>
-                            <th>简介</th>
-                            <th>状态</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="" id="">
-                            </td>
-                            <td><img src="../img/vedio.png" alt=""></td>
-                            <td>全球移动互联网大会（GMC）</td>
-                            <td>12：30：45</td>
-                            <td>2018-1-12 10:00</td>
-                            <td>主要介绍初中一年级所有的语文内容</td>
-                            <td>预案-手动</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="" id="">
-                            </td>
-                            <td><img src="../img/vedio.png" alt=""></td>
-                            <td>全球移动互联网大会（GMC）</td>
-                            <td>12：30：45</td>
-                            <td>2019-1-12 10:00</td>
-                            <td>主要介绍初中一年级所有的语文内容</td>
-                            <td>预案-手动</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="" id="">
-                            </td>
-                            <td><img src="../img/vedio.png" alt=""></td>
-                            <td>全球移动互联网大会（GMC）</td>
-                            <td>12：30：45</td>
-                            <td>2019-1-12 10:00</td>
-                            <td>主要介绍初中一年级所有的语文内容</td>
-                            <td>预案-手动</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="" id="">
-                            </td>
-                            <td><img src="../img/vedio.png" alt=""></td>
-                            <td>全球移动互联网大会（GMC）</td>
-                            <td>12：30：45</td>
-                            <td>2019-1-12 10:00</td>
-                            <td>主要介绍初中一年级所有的语文内容</td>
-                            <td>预案-手动</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="" id="">
-                            </td>
-                            <td><img src="../img/vedio.png" alt=""></td>
-                            <td>全球移动互联网大会（GMC）</td>
-                            <td>12：30：45</td>
-                            <td>2019-1-12 10:00</td>
-                            <td>主要介绍初中一年级所有的语文内容</td>
-                            <td>预案-手动</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="" id="">
-                            </td>
-                            <td><img src="../img/vedio.png" alt=""></td>
-                            <td>全球移动互联网大会（GMC）</td>
-                            <td>12：30：45</td>
-                            <td>2019-1-12 10:00</td>
-                            <td>主要介绍初中一年级所有的语文内容</td>
-                            <td>预案-手动</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div id="fenye"></div>
-
-
+            <div class="lszb">
+                <!-- 页面内容存放区域 -->
+                <div class="content">
+                        <!-- 不同模块 点播部分 -->
+                        <div class="toolBar">
+                            <ul>
+                                <li>
+                                    <i></i>
+                                    <span>暂停直播</span>
+                                </li>
+                                <li>
+                                    <i></i>
+                                    <span>恢复直播</span>
+                                </li>
+                                <li>
+                                    <i></i>
+                                    <span>设置权限</span>
+                                </li>
+            
+                            </ul>
+                        </div>
+        
+                        <table id="dbgl-table" class="tablesorter">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <input type="checkbox" name="" id="theadInp">
+                                    </th>
+                                    <th>视频播放</th>
+                                    <th>节目名称</th>
+                                    <th>节目时长</th>
+                                    <th>生成时间</th>
+                                    <th>简介</th>
+                                    <th>状态</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" id="">
+                                    </td>
+                                    <td><img src="../img/vedio.png" alt=""></td>
+                                    <td>全球移动互联网大会（GMC）</td>
+                                    <td>12：30：45</td>
+                                    <td>2018-1-12 10:00</td>
+                                    <td>主要介绍初中一年级所有的语文内容</td>
+                                    <td>预案-手动</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" id="">
+                                    </td>
+                                    <td><img src="../img/vedio.png" alt=""></td>
+                                    <td>全球移动互联网大会（GMC）</td>
+                                    <td>12：30：45</td>
+                                    <td>2019-1-12 10:00</td>
+                                    <td>主要介绍初中一年级所有的语文内容</td>
+                                    <td>预案-手动</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" id="">
+                                    </td>
+                                    <td><img src="../img/vedio.png" alt=""></td>
+                                    <td>全球移动互联网大会（GMC）</td>
+                                    <td>12：30：45</td>
+                                    <td>2019-1-12 10:00</td>
+                                    <td>主要介绍初中一年级所有的语文内容</td>
+                                    <td>预案-手动</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" id="">
+                                    </td>
+                                    <td><img src="../img/vedio.png" alt=""></td>
+                                    <td>全球移动互联网大会（GMC）</td>
+                                    <td>12：30：45</td>
+                                    <td>2019-1-12 10:00</td>
+                                    <td>主要介绍初中一年级所有的语文内容</td>
+                                    <td>预案-手动</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" id="">
+                                    </td>
+                                    <td><img src="../img/vedio.png" alt=""></td>
+                                    <td>全球移动互联网大会（GMC）</td>
+                                    <td>12：30：45</td>
+                                    <td>2019-1-12 10:00</td>
+                                    <td>主要介绍初中一年级所有的语文内容</td>
+                                    <td>预案-手动</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" id="">
+                                    </td>
+                                    <td><img src="../img/vedio.png" alt=""></td>
+                                    <td>全球移动互联网大会（GMC）</td>
+                                    <td>12：30：45</td>
+                                    <td>2019-1-12 10:00</td>
+                                    <td>主要介绍初中一年级所有的语文内容</td>
+                                    <td>预案-手动</td>
+                                </tr>
+                            </tbody>
+                        </table>
+        
+                        <div id="fenye"></div>
+        
+        
+                    </div>
             </div>
+            
         </div>
     </div>
 

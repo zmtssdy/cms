@@ -1,0 +1,198 @@
+.m-mian {
+  position: relative;
+  padding: 0 0 20px !important;
+  background: #E2E6EF;
+}
+.m-mian .content {
+  padding: 0 !important;
+}
+.m-mian .content .plan-floor1 {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+}
+.m-mian .content .plan-floor1 .floor-one {
+  float: left;
+  margin-left: 20px;
+  line-height: 50px;
+}
+.m-mian .content .plan-floor1 .floor-one i {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  background: url('../../../../img/title-users.png') no-repeat center;
+}
+.m-mian .content .plan-floor1 .floor-one span {
+  display: inline-block;
+  font-size: 14px;
+  color: #165ABB;
+  cursor: pointer;
+}
+.m-mian .content .zzjg-floor {
+  margin: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 80%;
+  background: #fff;
+  overflow-y: auto;
+}
+.m-mian .content .zzjg-floor .zzjg-title {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-indent: 10px;
+  color: #273142;
+  font-size: 14px;
+  background: #F0F3F9;
+  cursor: pointer;
+}
+.m-mian .content .zzjg-floor .down-box {
+  padding: 10px 15px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 600px;
+}
+.m-mian .content .zzjg-floor .down-box .addTitle {
+  margin-left: 20px;
+  width: 110px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  background: #357BDE;
+  font-size: 14px;
+}
+.m-mian .content .zzjg-floor .down-box ul {
+  list-style-type: none;
+  box-sizing: border-box;
+}
+.m-mian .content .zzjg-floor .down-box ul li {
+  padding-top: 15px;
+  width: auto;
+  height: auto;
+}
+.m-mian .content .zzjg-floor .down-box ul li .title-one {
+  display: inline-block;
+  width: 268px;
+  height: 30px;
+  line-height: 30px;
+  text-indent: 15px;
+  background: #e2e6ef;
+}
+.m-mian .content .zzjg-floor .down-box ul li .title-two {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  text-indent: 15px;
+  background: #e2e6ef;
+}
+.m-mian .content .zzjg-floor .down-box ul li .add {
+  display: inline-block;
+  margin: 0 10px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  width: 17px;
+  height: 17px;
+  background: url('../../../img/icon-add.png') no-repeat center;
+}
+.m-mian .content .zzjg-floor .down-box ul li .remove {
+  display: inline-block;
+  vertical-align: middle;
+  width: 17px;
+  height: 17px;
+  background: url('../../../img/icon-delete.png') no-repeat center;
+}
+.m-mian .content .zzjg-floor .down-box ul li .open {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px 0 -30px;
+  width: 17px;
+  height: 17px;
+  background: url('../../../img/tree-close.png') no-repeat center;
+}
+.m-mian .content .zzjg-floor .down-box ul li .close {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px 0 -30px;
+  width: 17px;
+  height: 17px;
+  background: url('../../../img/tree-open.png') no-repeat center;
+}
+.m-mian .content .zzjg-floor .down-box ul li .node-two li {
+  position: relative;
+  padding-top: 15px;
+  padding-left: 45px;
+  border-left: 1px dashed #15C5FF;
+  box-sizing: border-box;
+}
+.m-mian .content .zzjg-floor .down-box ul li .node-two li::before {
+  position: absolute;
+  top: 35px;
+  left: 1px;
+  content: '';
+  border-top: 1px dashed #15C5FF;
+  width: 17px;
+}
+.m-mian .content .zzjg-floor .down-box ul li .node-two .two-next {
+  padding-left: 30px;
+  box-sizing: border-box;
+  border-left: 1px dashed #15C5FF;
+}
+.m-mian .content .zzjg-floor .down-box ul li .node-two .two-next .node-three li {
+  position: relative;
+  padding-left: 35px;
+  border-left: 1px dashed #15C5FF;
+  box-sizing: border-box;
+}
+.m-mian .content .zzjg-floor .down-box ul li .node-two .two-next .node-three li::before {
+  position: absolute;
+  top: 35px;
+  left: 1px;
+  content: '';
+  border-top: 1px dashed #15C5FF;
+  width: 25px;
+}
+.m-mian .content .zzjg-floor .down-box ul li .active-open .node-three {
+  display: block;
+}
+.m-mian .content .zzjg-floor .down-box ul li .active-close .node-three {
+  display: none;
+}
+.m-mian .content .zzjg-floor .down-box ul .node-one .active-open:last-of-type > .two-next {
+  border-left: 0;
+}
+.m-mian .content .zzjg-floor .down-box ul .node-one > .code {
+  margin-left: 22px;
+}
+.m-mian .content .zzjg-floor .down-box ul .node-one > .code .close {
+  margin: 0 10px 0 -8px;
+}
+.m-mian .content .zzjg-floor .down-box ul .code {
+  width: 470px;
+  height: 30px;
+  padding: 3px;
+}
+.m-mian .content .zzjg-floor .down-box ul .code:hover {
+  background: #165ABB;
+}
+.m-mian .content .zzjg-floor .down-box ul .code:hover span {
+  background: rgba(226, 230, 239, 0.3);
+  color: #fff;
+}
+.m-mian .content .zzjg-floor .down-box ul .code:hover .add {
+  background: url('../../../img/icon-add-focus.png') no-repeat center;
+}
+.m-mian .content .zzjg-floor .down-box ul .code:hover .remove {
+  background: url('../../../img/icon-delete-focus.png') no-repeat center;
+}
+.m-mian .content .zzjg-floor .down-box .active-off .node-two {
+  display: none;
+}
+.m-mian .content .zzjg-floor .down-box .active-one .node-two {
+  display: block;
+}
+.m-mian .content .zzjg-floor .down-box > ul {
+  margin-left: 25px;
+}

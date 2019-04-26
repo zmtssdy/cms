@@ -186,6 +186,12 @@
   height: 138px;
   background: #535C6C;
 }
+.index-floor3 ul li:hover {
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.63);
+}
+.index-floor3 ul li:hover .floor3-top {
+  background: #7E95B4;
+}
 .index-floor3 ul li .floor3-top {
   padding: 12px 14px;
   width: 100%;
@@ -254,8 +260,8 @@
   height: 40px;
   text-align: left;
   background: #273142;
-  border-bottom: 1px solid #545454;
-  border-top: 1px solid #545454;
+  border-bottom: 1px solid #4d5666;
+  border-top: 1px solid #4d5666;
   box-sizing: border-box;
 }
 .index-floor4 .floor4-left .floor4-left-content table thead tr th {
@@ -271,7 +277,7 @@
   width: 100%;
   height: 46px;
   cursor: pointer;
-  border-bottom: 1px solid #545454;
+  border-bottom: 1px solid #4d5666;
   box-sizing: border-box;
   background: #3D4655;
 }

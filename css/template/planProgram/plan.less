@@ -1,0 +1,229 @@
+.m-mian {
+    padding: 0 0 20px !important;
+    .content {
+        padding: 0 !important;
+    }
+    .plan-floor1 {
+        width:100%;
+        height:50px;
+        background : #fff;
+        .floor-one {
+            float: left;
+            margin-left: 20px;
+            line-height: 50px;
+            i {
+                display: inline-block;
+                vertical-align: middle;
+                width: 24px;
+                height: 24px;
+                background: url('../../../img/title-templet.png') no-repeat center;
+            }
+            span {
+                display: inline-block;
+                font-size: 14px;
+                color: #165ABB;
+            }
+        }
+        .floor-two {
+            float: right;
+            ul {
+                list-style: none;
+                margin-top: 10px;
+                margin-right: 20px;
+                li {
+                    float: right;
+                    padding: 5px 10px;
+                    box-sizing: border-box;
+                    width: auto;
+                    line-height: 20px;
+                    border-right: 2px solid #fff;
+                    font-size:14px;
+                    font-family:'MicrosoftYaHei';
+                    font-weight:400;
+                    color:#273142;
+                    background:rgba(240,243,249,1);
+                    cursor: pointer;
+                    input {
+                        border: none;
+                        line-height: 20px;
+                        background: rgba(240,243,249,1);
+                        color: #A2A8B1;
+                    }
+                    .floor-search {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 20px;
+                        height: 20px;
+                        background: url(../../../img/icon-search.png) no-repeat center;
+                    }
+                }
+            }
+        }
+    }
+    .plan-floor2 {
+        display: flex;
+        padding: 15px 20px;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        align-content: space-between;
+        flex-wrap: wrap;
+        background: #f0f3f9;
+        .floor2-content {
+            width: auto;
+            height: 310px;
+            overflow: hidden;
+            border-radius: 0 0 10px 10px;
+            .floor2-1 {
+                position: relative;
+                margin: 10px 20px 20px 23px;
+                width:372px;
+                height:252px;
+                transition: height 0.3s;
+                background:rgba(255,255,255,1);
+                border-radius:10px 10px 10px 10px;
+                overflow: hidden;
+                .floor2-title {
+                    width: 100%;
+                    height: 120px;
+                    line-height: 90px;
+                    text-align: center;
+                    border-radius: 10px 10px 0 0;
+                    background: #357BDE;
+                    span {
+                        display: inline-block;
+                        max-width:215px;
+                        height:18px;
+                        font-size:18px;
+                        font-weight:400;
+                        color:rgba(255,255,255,1);
+                        line-height:20px;
+                        cursor: pointer;
+                    }
+                }
+                .floor2-middle {
+                    position: absolute;
+                    top: 102px;
+                    left: 10%;
+                    width: 80%;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    font-size:14px; 
+                    color: #62666D;
+                    background:rgba(254,254,255,1);
+                    box-shadow:0px 0px 16px 0px rgba(0, 0, 0, 0.38);
+                    cursor: pointer;    
+                }
+                .floor2-bottom {
+                    width: 100%;
+                    height: 132px;
+                    background: #fff;
+                    border-radius: 0 0 10px 10px;
+                    ul {
+                        padding-top: 30px;
+                        box-sizing: border-box;
+                        list-style-type: none;
+                        width: 100%;
+                        height: 30px;
+                        li {
+                            display: flex;
+                            width: 100%;
+                            height: 40px;
+                            justify-content: space-between;
+                            .bottom1-index,
+                            .bottom2-index {
+                                padding-left: 45px;
+                                width: 50%;
+                                height: 40px;
+                                line-height: 40px;
+                                box-sizing: border-box;
+                                i {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                                span {
+                                    padding: 0 10px;
+                                    box-sizing: border-box;
+                                    font-size: 14px;
+                                    color: #62666D;
+                                }
+                            }
+                        }
+                        .active .bottom1-index i {
+                            background: url('../../../img/b-broadcast.png') no-repeat center;
+                        }
+                        .active .bottom2-index i {
+                            background: url('../../../img/b-record.png') no-repeat center;
+                        }
+                        .error .bottom1-index i {
+                            background: url('../../../img/b-publish.png') no-repeat center;
+                        }
+                        .error .bottom2-index i {
+                            background: url('../../../img/b-flow.png') no-repeat center;
+                        }
+                    }
+                }
+                .floor2-foot {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    height:48px;
+                    text-align: center;
+                    border-top: 1px solid rgba(226,230,239,1);
+                    border-radius: 0 0 10px 10px;
+                    div {
+                        position: relative;
+                        width: 33%;
+                        height: 48px;
+                        line-height: 48px;
+                        cursor: pointer;
+                        i {
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-right: 5px;
+                            width: 16px;
+                            height: 16px;
+                        }
+                        span {
+                            width: auto;
+                            font-size: 14px;
+                            color: #273142;
+                            font-family: 'MicrosoftYaHei';
+                        }
+                        em {
+                            position: absolute;
+                            top: 15px;
+                            right: 0;
+                            display: inline-block;
+                            width: 1px;
+                            height: 20px;
+                            background: #E2E6EF;
+                        }
+                    }
+                    .delete i {
+                        background: url('../../../img/control-delete.png') no-repeat center;
+                    }
+                    .edit i {
+                        background: url('../../../img/control-edit.png') no-repeat center;
+                    }
+                    .start i {
+                        background: url('../../../img/control-start.png') no-repeat center;
+                    }
+                }
+            }
+            .floor2-1:hover {
+                height: 300px;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width:1400px){
+    .plan-floor2 .floor2-1 {
+        width: 326px !important;
+    }
+}

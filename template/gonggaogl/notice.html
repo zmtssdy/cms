@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>公告管理</title>
+    <link rel="stylesheet" href="../../layui/css/layui.mobile.css">
+    <link rel="stylesheet" href="../../layui/css/layui.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/template/gonggaogl/notice.css">
+</head>
+
+<body>
+    <!-- 公用布局模块 -->
+    <div class="module">
+        <!-- 公用头部 -->
+        <div class="m-top">
+            <div class="logo">CHAORAN</div>
+            <div class="top-title">
+                <span>超然多媒体管理后台</span>
+                <ul>
+                    <li class="active">多媒体管理</li>
+                    <li>录制管理</li>
+                </ul>
+            </div>
+            <div class="top-right">
+                <ul>
+                    <li class="top-user">
+                        <a href="javascript:void(0);">
+                            <i></i>
+                            <span>user890090</span>
+                        </a>
+                    </li>
+                    <li class="top-index active">
+                        <a href="javascript:void(0);">
+                            <i></i>
+                            <span>主页</span>
+                        </a>
+                    </li>
+                    <li class="top-set">
+                        <a href="javascript:void(0);">
+                            <i></i>
+                            <span>设置</span>
+                            <em></em>
+                            <div class="hover-set">
+                                <div class="hover-set-triangle"></div>
+                                <dl>
+                                    <dd>
+                                        <b class="hover-set-p"></b>
+                                        <label>修改密码</label>
+                                    </dd>
+                                    <dd>
+                                        <b class="hover-set-v"></b>
+                                        <label>版本信息</label>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="top-exit">
+                        <a href="javascript:void(0);">
+                            <i></i>
+                            <span>退出</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 公用菜单栏 -->
+        <div class="m-left">
+            <ul class="layui-nav layui-nav-tree layui-bg-cyan layui-inline" lay-filter="demo">
+                <li class="layui-nav-item"><a href=""><i class="icon-dbgl"></i>点播管理</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;"><i class="icon-zbgl"></i>直播管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">正在直播</a></dd>
+                        <dd><a href="">历史直播</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href=""><i class="icon-plgl"></i>评论管理</a></li>
+                <li class="layui-nav-item"><a href=""><i class="icon-flgl"></i>分类管理</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;"><i class="icon-yhgl"></i>用户管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">组织结构</a></dd>
+                        <dd><a href="">用户管理</a></dd>
+                        <dd><a href="">外部认证</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href=""><i class="icon-gggl"></i>公告管理</a></li>
+            </ul>
+        </div>
+        <!-- 公用内容块 -->
+        <div class="m-mian">
+            <!-- 页面内容存放区域 -->
+            <div class="content">
+                <div class="gggl-floor1">
+                    <div class="floor-one">
+                        <i></i>
+                        <span>公告管理</span>
+                    </div>
+                    <div class="floor-two">
+                        <ul>
+                            <li>
+                                <input type="text" placeholder="输入关键字搜索" class="search-text">
+                                <i class="floor-search"></i>
+                            </li>
+                            <li>精确查找</li>
+                            <li>批量删除</li>   
+                        </ul>
+                    </div>
+                </div>
+                <div class="gggl-floor2">
+                    <!-- 收起 -->
+                    <div class="gggl-content close">
+                        <div class="gggl-index active-off">
+                            <div class="gggl-title">
+                                <input type="checkbox">
+                                <span>服务器升级公告</span>
+                                <div class="button-active">
+                                    <em></em>展开
+                                </div>
+                            </div>
+                            <p class="time">
+                                <span>2019-02-12 10:00</span>
+                            </p>
+                            <p class="title1-1">
+                                <span>因数据中心割接，从即日起到 1 月 9 日中午 12
+                                    点，我们将对服务器做一些优化和升级，本次服务器升级涉及范围广，因此会对功能有较大影响，在此期间我们将暂停以下功能：</span></br>
+                                <span>1.采集</span></br>
+                                <span>2.评论</span></br>
+                                <span>在此期间，您仍可使用搜索、浏览等功能。我们有完善的数据安全措施，您的图片等数据不会受到任何影响，请放心。</span></br>
+                                <span>抱歉给您带来不便。</span>
+                            </p>
+                        </div>
+                        <div class="gggl-index active-on">
+                            <div class="gggl-title">
+                                <input type="checkbox">
+                                <span>服务器升级公告</span>
+                                <div class="button-active">
+                                    <em></em>收起
+                                </div>
+                            </div>
+                            <p class="time">
+                                <span>2019-02-12 10:00</span>
+                            </p>
+                            <p class="title1-1">
+                                <span>因数据中心割接，从即日起到 1 月 9 日中午 12
+                                    点，我们将对服务器做一些优化和升级，本次服务器升级涉及范围广，因此会对功能有较大影响，在此期间我们将暂停以下功能：</span></br>
+                                <span>1.采集</span></br>
+                                <span>2.评论</span></br>
+                                <span>在此期间，您仍可使用搜索、浏览等功能。我们有完善的数据安全措施，您的图片等数据不会受到任何影响，请放心。</span></br>
+                                <span>抱歉给您带来不便。</span>
+                            </p>
+                            <div class="title-bottom">
+                                <div class="delete">
+                                    <i></i>
+                                    <span>删除</span>
+                                    <em></em>
+                                </div>
+                                <div class="edit">
+                                    <i></i>
+                                    <span>编辑</span>
+                                    <em></em>
+                                </div>
+                                <div class="start">
+                                    <i></i>
+                                    <span>置顶</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 展开 -->
+                    <div class="gggl-content open">
+                        <div class="gggl-index active-off">
+                            <div class="gggl-title">
+                                <input type="checkbox">
+                                <span>服务器升级公告</span>
+                                <div class="button-active">
+                                    <em></em>
+                                    展开
+                                </div>
+                            </div>
+                            <p class="time">
+                                <span>2019-02-12 10:00</span>
+                            </p>
+                            <p class="title1-1">
+                                <span>因数据中心割接，从即日起到 1 月 9 日中午 12
+                                    点，我们将对服务器做一些优化和升级，本次服务器升级涉及范围广，因此会对功能有较大影响，在此期间我们将暂停以下功能：</span></br>
+                                <span>1.采集</span></br>
+                                <span>2.评论</span></br>
+                                <span>在此期间，您仍可使用搜索、浏览等功能。我们有完善的数据安全措施，您的图片等数据不会受到任何影响，请放心。</span></br>
+                                <span>抱歉给您带来不便。</span>
+                            </p>
+                        </div>
+                        <div class="gggl-index active-on">
+                            <div class="gggl-title">
+                                <input type="checkbox">
+                                <span>服务器升级公告</span>
+                                <div class="button-active">
+                                    <em></em>
+                                    收起
+                                </div>
+                            </div>
+                            <p class="time">
+                                <span>2019-02-12 10:00</span>
+                            </p>
+                            <p class="title1-1">
+                                <span>因数据中心割接，从即日起到 1 月 9 日中午 12
+                                    点，我们将对服务器做一些优化和升级，本次服务器升级涉及范围广，因此会对功能有较大影响，在此期间我们将暂停以下功能：</span></br>
+                                <span>1.采集</span></br>
+                                <span>2.评论</span></br>
+                                <span>在此期间，您仍可使用搜索、浏览等功能。我们有完善的数据安全措施，您的图片等数据不会受到任何影响，请放心。</span></br>
+                                <span>抱歉给您带来不便。</span>
+                            </p>
+                            <div class="title-bottom">
+                                <div class="delete">
+                                    <i></i>
+                                    <span>删除</span>
+                                    <em></em>
+                                </div>
+                                <div class="edit">
+                                    <i></i>
+                                    <span>编辑</span>
+                                    <em></em>
+                                </div>
+                                <div class="start">
+                                    <i></i>
+                                    <span>置顶</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gggl-content close">
+                        <div class="gggl-index active-off">
+                            <div class="gggl-title">
+                                <input type="checkbox">
+                                <span>服务器升级公告</span>
+                                <div class="button-active">
+                                    <em></em>展开
+                                </div>
+                            </div>
+                            <p class="time">
+                                <span>2019-02-12 10:00</span>
+                            </p>
+                            <p class="title1-1">
+                                <span>因数据中心割接，从即日起到 1 月 9 日中午 12
+                                    点，我们将对服务器做一些优化和升级，本次服务器升级涉及范围广，因此会对功能有较大影响，在此期间我们将暂停以下功能：</span></br>
+                                <span>1.采集</span></br>
+                                <span>2.评论</span></br>
+                                <span>在此期间，您仍可使用搜索、浏览等功能。我们有完善的数据安全措施，您的图片等数据不会受到任何影响，请放心。</span></br>
+                                <span>抱歉给您带来不便。</span>
+                            </p>
+                        </div>
+                        <div class="gggl-index active-on">
+                            <div class="gggl-title">
+                                <input type="checkbox">
+                                <span>服务器升级公告</span>
+                                <div class="button-active">
+                                    <em></em>收起
+                                </div>
+                            </div>
+                            <p class="time">
+                                <span>2019-02-12 10:00</span>
+                            </p>
+                            <p class="title1-1">
+                                <span>因数据中心割接，从即日起到 1 月 9 日中午 12
+                                    点，我们将对服务器做一些优化和升级，本次服务器升级涉及范围广，因此会对功能有较大影响，在此期间我们将暂停以下功能：</span></br>
+                                <span>1.采集</span></br>
+                                <span>2.评论</span></br>
+                                <span>在此期间，您仍可使用搜索、浏览等功能。我们有完善的数据安全措施，您的图片等数据不会受到任何影响，请放心。</span></br>
+                                <span>抱歉给您带来不便。</span>
+                            </p>
+                            <div class="title-bottom">
+                                <div class="delete">
+                                    <i></i>
+                                    <span>删除</span>
+                                    <em></em>
+                                </div>
+                                <div class="edit">
+                                    <i></i>
+                                    <span>编辑</span>
+                                    <em></em>
+                                </div>
+                                <div class="start">
+                                    <i></i>
+                                    <span>置顶</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gggl-content close">
+                        <div class="gggl-index active-off">
+                            <div class="gggl-title">
+                                <input type="checkbox">
+                                <span>服务器升级公告</span>
+                                <div class="button-active">
+                                    <em></em>展开
+                                </div>
+                            </div>
+                            <p class="time">
+                                <span>2019-02-12 10:00</span>
+                            </p>
+                            <p class="title1-1">
+                                <span>因数据中心割接，从即日起到 1 月 9 日中午 12
+                                    点，我们将对服务器做一些优化和升级，本次服务器升级涉及范围广，因此会对功能有较大影响，在此期间我们将暂停以下功能：</span></br>
+                                <span>1.采集</span></br>
+                                <span>2.评论</span></br>
+                                <span>在此期间，您仍可使用搜索、浏览等功能。我们有完善的数据安全措施，您的图片等数据不会受到任何影响，请放心。</span></br>
+                                <span>抱歉给您带来不便。</span>
+                            </p>
+                        </div>
+                        <div class="gggl-index active-on">
+                            <div class="gggl-title">
+                                <input type="checkbox">
+                                <span>服务器升级公告</span>
+                                <div class="button-active">
+                                    <em></em>收起
+                                </div>
+                            </div>
+                            <p class="time">
+                                <span>2019-02-12 10:00</span>
+                            </p>
+                            <p class="title1-1">
+                                <span>因数据中心割接，从即日起到 1 月 9 日中午 12
+                                    点，我们将对服务器做一些优化和升级，本次服务器升级涉及范围广，因此会对功能有较大影响，在此期间我们将暂停以下功能：</span></br>
+                                <span>1.采集</span></br>
+                                <span>2.评论</span></br>
+                                <span>在此期间，您仍可使用搜索、浏览等功能。我们有完善的数据安全措施，您的图片等数据不会受到任何影响，请放心。</span></br>
+                                <span>抱歉给您带来不便。</span>
+                            </p>
+                            <div class="title-bottom">
+                                <div class="delete">
+                                    <i></i>
+                                    <span>删除</span>
+                                    <em></em>
+                                </div>
+                                <div class="edit">
+                                    <i></i>
+                                    <span>编辑</span>
+                                    <em></em>
+                                </div>
+                                <div class="start">
+                                    <i></i>
+                                    <span>置顶</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../layui/layui.all.js"></script>
+<script src="../../js/template/gonggaogl/notice.js"></script>

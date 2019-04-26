@@ -41,15 +41,15 @@
 .m-mian .user-floor2 .user1-1 {
   position: absolute;
   top: 50%;
-  margin-top: -250px;
+  margin-top: -200px;
   left: 0;
   right: 0;
   margin-right: auto;
   margin-left: auto;
   padding: 20px;
   box-sizing: border-box;
-  width: 60%;
-  height: 500px;
+  width: 900px;
+  height: 639px;
   background: #fff;
   overflow: hidden;
 }
@@ -130,7 +130,7 @@
   padding: 0 8px;
   box-sizing: border-box;
   width: 100%;
-  height: auto;
+  height: 348px;
   background: #f0f3f9;
   border-radius: 3px 3px 3px 3px;
 }
@@ -142,6 +142,7 @@
   flex-flow: wrap;
 }
 .m-mian .user-floor2 .user1-1 .user-content1 .user-link .user-1 {
+  margin-top: 10px;
   width: 50%;
   height: 50px;
   line-height: 50px;
@@ -159,8 +160,8 @@
 .m-mian .user-floor2 .user1-1 .user-content1 .user-link .user-1 input {
   display: inline-block;
   width: 63%;
-  height: 30px;
-  line-height: 30px;
+  height: 38px;
+  line-height: 38px;
   text-indent: 10px;
   border: none;
 }
@@ -170,7 +171,7 @@
 }
 .m-mian .user-floor2 .user-button {
   display: flex;
-  margin-top: 90px;
+  margin-top: 92px;
   margin-left: -4%;
   width: 108%;
   height: 50px;

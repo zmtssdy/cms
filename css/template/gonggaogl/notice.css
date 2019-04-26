@@ -137,7 +137,7 @@
   line-height: 25px;
 }
 .m-mian .gggl-floor2 .gggl-content .gggl-index .title-bottom {
-  display: flex;
+  display: none;
   justify-content: flex-end;
   margin-top: 10px;
   margin-left: -20px;
@@ -183,6 +183,9 @@
 }
 .m-mian .gggl-floor2 .gggl-content .gggl-index .title-bottom .start i {
   background: url('../../../img/control-top.png') no-repeat center;
+}
+.m-mian .gggl-floor2 .gggl-content .gggl-index .title-hover {
+  display: flex;
 }
 .m-mian .gggl-floor2 .gggl-content .active-off em {
   background: url('../../../img/icon-open.png') no-repeat center;

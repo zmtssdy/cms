@@ -29,40 +29,63 @@
   padding: 44px;
   background-color: #273142;
 }
-.device-manage-box .device-content table {
+.device-manage-box .device-content .table {
   margin-bottom: 40px;
   width: 100%;
   border-top: 1px solid #303C4F;
   border-left: 1px solid #303C4F;
 }
-.device-manage-box .device-content table .input {
-  width: 53px;
-  height: 44px;
-}
-.device-manage-box .device-content table tr {
+.device-manage-box .device-content .table .line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   border-bottom: 1px solid #303C4F;
 }
-.device-manage-box .device-content table tr.active {
-  background-color: #3D4655;
-}
-.device-manage-box .device-content table th {
-  border-right: 1px solid #303C4F;
-  color: #fff;
-  font-weight: normal;
-}
-.device-manage-box .device-content table td {
+.device-manage-box .device-content .table .line .td {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
   border-right: 1px solid #303C4F;
   color: #9A9CA0;
   text-align: center;
 }
-.device-manage-box .device-content table td a {
-  color: #9A9CA0;
+.device-manage-box .device-content .table .line .td.td1 {
+  width: 53px;
+}
+.device-manage-box .device-content .table .line .td.td2 {
+  width: 28.6%;
+}
+.device-manage-box .device-content .table .line .td.td3 {
+  width: 21.2%;
+}
+.device-manage-box .device-content .table .line .td.td4 {
+  width: 17.7%;
+}
+.device-manage-box .device-content .table .line .td.td5 {
+  width: 10%;
+}
+.device-manage-box .device-content .table .line .td.td6 {
+  width: 180px;
+}
+.device-manage-box .device-content .table .table-head {
+  overflow-y: scroll;
+}
+.device-manage-box .device-content .table .table-body {
+  height: 180px;
+  overflow-y: scroll;
+}
+.device-manage-box .device-content .table .table-body .line:hover {
+  background-color: #3D4655;
 }
 .device-manage-box .device-content .option-box {
   display: flex;
   justify-content: space-around;
-  max-width: 110px;
+  width: 100%;
   margin: 0 auto;
+}
+.device-manage-box .device-content .option-box a {
+  color: #9A9CA0;
 }
 .device-manage-box .device-content .chart-box {
   display: flex;

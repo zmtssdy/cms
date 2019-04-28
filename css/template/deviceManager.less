@@ -27,40 +27,65 @@
     .device-content {
         padding: 44px;
         background-color: #273142;
-        table {
+        .table {
             margin-bottom: 40px;
             width: 100%;
             border-top: 1px solid #303C4F;
             border-left: 1px solid #303C4F;
-            .input {
-                width: 53px;
-                height: 44px;
-            }
-            tr {
+            .line {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
                 border-bottom: 1px solid #303C4F;
-                &.active {
-                    background-color: #3D4655;
+                .td {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 44px;
+                    border-right: 1px solid #303C4F;
+                    color: #9A9CA0;
+                    text-align: center;
+                    &.td1 {
+                        width: 53px;
+                    }
+                    &.td2 {
+                        width: 28.6%;
+                    }
+                    &.td3 {
+                        width: 21.2%;
+                    }
+                    &.td4 {
+                        width: 17.7%;
+                    }
+                    &.td5 {
+                        width: 10%;
+                    }
+                    &.td6 {
+                        width: 180px;
+                    }
                 }
             }
-            th {
-                border-right: 1px solid #303C4F;
-                color: #fff;
-                font-weight: normal;
+            .table-head {
+                overflow-y: scroll;
             }
-            td {
-                border-right: 1px solid #303C4F;
-                color: #9A9CA0;
-                text-align: center;
-                a {
-                    color: #9A9CA0;
+            .table-body {
+                height: 180px;
+                overflow-y: scroll;
+                .line {
+                    &:hover {
+                        background-color: #3D4655;
+                    }
                 }
             }
         }
         .option-box {
             display: flex;
             justify-content: space-around;
-            max-width: 110px;
+            width: 100%;
             margin: 0 auto;
+            a {
+                color: #9A9CA0;
+            }
         }
         .chart-box {
             display: flex;

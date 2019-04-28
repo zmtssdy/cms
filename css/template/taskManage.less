@@ -138,21 +138,25 @@
                 .bottom {
                     display: flex;
                     justify-content: flex-end;
-                    padding-right: 24px;
                     align-items: center;
                     background: #fff;
                     height: 40px;
                     .option-item {
                         display: flex;
                         align-items: center;
+                        padding: 0 20px;
+                        height: 100%;
                         img.icon {
                             margin-right: 15px;
                             width: 15px;
                             height: auto;
                         }
+                        &:hover {
+                            background: #F0F3F9;
+                            color: #333;
+                        }
                     }
                     i.cut-line {
-                        margin: 0 20px;
                         width: 1px;
                         height: 20px;
                         background-color: #E2E6EF;

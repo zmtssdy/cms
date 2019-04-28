@@ -12,6 +12,9 @@
   padding: 30px;
   background-color: #fff;
 }
+.task-create-box input::-webkit-input-placeholder {
+  color: #8594AE;
+}
 .task-create-box .left {
   width: calc(50% - 50px);
 }
@@ -140,7 +143,7 @@
   margin-right: 15px;
 }
 .task-create-box .input-block .input-line.checkbox-line .checkbox-group .check-item-line input[type="text"] {
-  width: 60px;
+  width: 58px;
   border: none;
   height: 28px;
   background-color: #F0F3F9;

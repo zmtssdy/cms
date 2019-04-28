@@ -144,7 +144,7 @@
                                     <div class="check-box">
                                         <div class="check-item">
                                             <label for="">
-                                                <input type="checkbox" />
+                                                <input type="checkbox" id="isLive2" data-for="liveBox2" />
                                                 <span>是</span>
                                             </label>
                                         </div>
@@ -156,7 +156,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="input-block">
+                                <div class="input-block" id="liveBox2" data-for="isLive2">
                                     <div class="input-line">
                                         <div class="label">
                                             <span>直播密码</span>
@@ -196,7 +196,7 @@
                                     <div class="check-box">
                                         <div class="check-item">
                                             <label for="">
-                                                <input type="checkbox" />
+                                                <input type="checkbox" id="isEasyFlow2" data-for="easyFlowBox2" />
                                                 <span>是</span>
                                             </label>
                                         </div>
@@ -208,7 +208,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="input-block">
+                                <div class="input-block" id="easyFlowBox2" data-for="isEasyFlow2">
                                     <div class="input-line">
                                         <div class="label">
                                             <input type="checkbox">
@@ -305,7 +305,7 @@
                                     <div class="check-box">
                                         <div class="check-item">
                                             <label for="">
-                                                <input type="checkbox" />
+                                                <input type="checkbox" id="setTimeOpenClass2" data-for="openClassBox2" />
                                                 <span>是</span>
                                             </label>
                                         </div>
@@ -317,13 +317,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="input-block">
+                                <div class="input-block" id="openClassBox2" data-for="setTimeOpenClass2">
                                     <div class="input-line">
                                         <div class="label">
                                             <span>起始日期</span>
                                         </div>
                                         <div class="value">
-                                            <input type="text" placeholder="请输入6位数字密码" />
+                                            <input type="text" placeholder="请输入起始日期" />
                                         </div>
                                     </div>
                                     <div class="input-line">
@@ -380,5 +380,7 @@
         </div>
     </div>
 </body>
+<script src="../js/jquery.min.js"></script>
 <script src="../layui/layui.all.js"></script>
+<script src="../js/common.js"></script>
 </html>

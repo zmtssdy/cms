@@ -169,6 +169,9 @@
   width: 72%;
   box-sizing: border-box;
 }
+.index-floor2 .floor2-content .banner ul li .banner-echart {
+  background: url('../img/index-list-bg.png') no-repeat center;
+}
 .index-floor2 .floor2-content .banner ul li:hover {
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.63);
 }

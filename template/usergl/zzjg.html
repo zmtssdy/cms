@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../../layui/css/layui.mobile.css">
     <link rel="stylesheet" href="../../layui/css/layui.css">
     <link rel="stylesheet" href="../../css/common.css">
+    <!-- 分页样式 -->
+    <link rel="stylesheet" href="../../jquery.tablesorter/themes/blue/style.css">
     <link rel="stylesheet" href="../../css/template/usergl/zzjg.css">
 </head>
 
@@ -92,15 +94,19 @@
                     </li>
                 </ul>
             </div>
-        
+
             <div class="common-nav2">
                 <ul class="layui-nav layui-nav-tree layui-bg-cyan layui-inline" lay-filter="demo">
-                    <li class="layui-nav-item"><a href="../../template/planProgram/plan.html"><i class="icon-yagl"></i>预案管理</a>
+                    <li class="layui-nav-item"><a href="../../template/planProgram/plan.html"><i
+                                class="icon-yagl"></i>预案管理</a>
                     </li>
-                    <li class="layui-nav-item"><a href="../../template/taskManage.html"><i class="icon-rwgl"></i>任务管理</a></li>
-                    <li class="layui-nav-item"><a href="../../template/terminalManage.html"><i class="icon-zdgl"></i>终端管理</a>
+                    <li class="layui-nav-item"><a href="../../template/taskManage.html"><i
+                                class="icon-rwgl"></i>任务管理</a></li>
+                    <li class="layui-nav-item"><a href="../../template/terminalManage.html"><i
+                                class="icon-zdgl"></i>终端管理</a>
                     </li>
-                    <li class="layui-nav-item"><a href="../../template/deviceManage.html"><i class="icon-sbgl"></i>设备管理</a></li>
+                    <li class="layui-nav-item"><a href="../../template/deviceManage.html"><i
+                                class="icon-sbgl"></i>设备管理</a></li>
                 </ul>
             </div>
         </div>
@@ -114,122 +120,251 @@
                         <span>用户管理 > 组织机构</span>
                     </div>
                 </div>
-                <div class="zzjg-floor">
-                    <p class="zzjg-title">组织机构</p>
-                    <div class="down-box">
-                        <p class="addTitle">新建一级组织</p>
-                        <!-- active-one 一级展开 active-off 一级收起  active-open 二级展开 active-close 二级收起 -->
-                        <ul>
-                            <li class="node-one active-one">
-                                <div class="code">
-                                    <i class="open"></i>
-                                    <span class="title-one">组织一</span>
-                                    <span class="title-two">标签一</span>
-                                    <em class="add"></em>
-                                    <em class="remove"></em>
-                                </div>
+                <div class="zzjg-center">
+                    <div class="zzjg-floor">
+                        <p class="zzjg-title">组织机构</p>
+                        <div class="down-box">
+                            <!-- <p class="addTitle">新建一级组织</p> -->
+                            <!-- active-one 一级展开 active-off 一级收起  active-open 二级展开 active-close 二级收起 -->
+                            <ul>
+                                <li class="node-one active-one">
+                                    <div class="code">
+                                        <i class="open"></i>
+                                        <span class="title-one">组织一</span>
+                                        <span class="title-two">标签一</span>
+                                        <em class="add"></em>
+                                        <em class="remove"></em>
+                                    </div>
 
-                                <ul class="node-two active-close">
-                                    <li>
-                                        <div class="code">
-                                            <i class="close"></i>
-                                            <span class="title-one">组织二</span>
-                                            <span class="title-two">标签二</span>
-                                            <em class="add"></em>
-                                            <em class="remove"></em>
+                                    <ul class="node-two active-close">
+                                        <li>
+                                            <div class="code">
+                                                <i class="close"></i>
+                                                <span class="title-one">组织二</span>
+                                                <span class="title-two">标签二</span>
+                                                <em class="add"></em>
+                                                <em class="remove"></em>
+                                            </div>
+                                        </li>
+                                        <div class="two-next">
+                                            <ul class="node-three">
+                                                <li>
+                                                    <div class="code">
+                                                        <span class="title-one">组织三</span>
+                                                        <span class="title-two">标签三</span>
+                                                        <em class="add"></em>
+                                                        <em class="remove"></em>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="node-three">
+                                                <li>
+                                                    <div class="code">
+                                                        <span class="title-one">组织三</span>
+                                                        <span class="title-two">标签三</span>
+                                                        <em class="add"></em>
+                                                        <em class="remove"></em>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
-                                    </li>
-                                    <div class="two-next">
-                                        <ul class="node-three">
-                                            <li>
-                                                <div class="code">
-                                                    <span class="title-one">组织三</span>
-                                                    <span class="title-two">标签三</span>
-                                                    <em class="add"></em>
-                                                    <em class="remove"></em>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <ul class="node-three">
-                                            <li>
-                                                <div class="code">
-                                                    <span class="title-one">组织三</span>
-                                                    <span class="title-two">标签三</span>
-                                                    <em class="add"></em>
-                                                    <em class="remove"></em>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </ul>
-                                <ul class="node-two active-close">
-                                    <li>
-                                        <div class="code">
-                                            <i class="close"></i>
-                                            <span class="title-one">组织二</span>
-                                            <span class="title-two">标签二</span>
-                                            <em class="add"></em>
-                                            <em class="remove"></em>
+                                    </ul>
+                                    <ul class="node-two active-close">
+                                        <li>
+                                            <div class="code">
+                                                <i class="close"></i>
+                                                <span class="title-one">组织二</span>
+                                                <span class="title-two">标签二</span>
+                                                <em class="add"></em>
+                                                <em class="remove"></em>
+                                            </div>
+                                        </li>
+                                        <div class="two-next">
+                                            <ul class="node-three">
+                                                <li>
+                                                    <div class="code">
+                                                        <span class="title-one">组织三</span>
+                                                        <span class="title-two">标签三</span>
+                                                        <em class="add"></em>
+                                                        <em class="remove"></em>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="node-three">
+                                                <li>
+                                                    <div class="code">
+                                                        <span class="title-one">组织三</span>
+                                                        <span class="title-two">标签三</span>
+                                                        <em class="add"></em>
+                                                        <em class="remove"></em>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
-                                    </li>
-                                    <div class="two-next">
-                                        <ul class="node-three">
-                                            <li>
-                                                <div class="code">
-                                                    <span class="title-one">组织三</span>
-                                                    <span class="title-two">标签三</span>
-                                                    <em class="add"></em>
-                                                    <em class="remove"></em>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <ul class="node-three">
-                                            <li>
-                                                <div class="code">
-                                                    <span class="title-one">组织三</span>
-                                                    <span class="title-two">标签三</span>
-                                                    <em class="add"></em>
-                                                    <em class="remove"></em>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </ul>
-                                <ul class="node-two active-open">
-                                    <li>
-                                        <div class="code">
-                                            <i class="open"></i>
-                                            <span class="title-one">组织二</span>
-                                            <span class="title-two">标签二</span>
-                                            <em class="add"></em>
-                                            <em class="remove"></em>
+                                    </ul>
+                                    <ul class="node-two active-open">
+                                        <li>
+                                            <div class="code">
+                                                <i class="open"></i>
+                                                <span class="title-one">组织二</span>
+                                                <span class="title-two">标签二</span>
+                                                <em class="add"></em>
+                                                <em class="remove"></em>
+                                            </div>
+                                        </li>
+                                        <div class="two-next">
+                                            <ul class="node-three">
+                                                <li>
+                                                    <div class="code">
+                                                        <span class="title-one">组织三</span>
+                                                        <span class="title-two">标签三</span>
+                                                        <em class="add"></em>
+                                                        <em class="remove"></em>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="node-three">
+                                                <li>
+                                                    <div class="code">
+                                                        <span class="title-one">组织三</span>
+                                                        <span class="title-two">标签三</span>
+                                                        <em class="add"></em>
+                                                        <em class="remove"></em>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
-                                    </li>
-                                    <div class="two-next">
-                                        <ul class="node-three">
-                                            <li>
-                                                <div class="code">
-                                                    <span class="title-one">组织三</span>
-                                                    <span class="title-two">标签三</span>
-                                                    <em class="add"></em>
-                                                    <em class="remove"></em>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <ul class="node-three">
-                                            <li>
-                                                <div class="code">
-                                                    <span class="title-one">组织三</span>
-                                                    <span class="title-two">标签三</span>
-                                                    <em class="add"></em>
-                                                    <em class="remove"></em>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </ul>
-                            </li>
-                        </ul>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="zzjg-floor1">
+                        <div class="toolBar">
+                            <ul>
+                                <li>
+                                    <i></i>
+                                    <span>删除</span>
+                                </li>
+                                <li>
+                                    <i></i>
+                                    <span>编辑</span>
+                                </li>
+                                <li>
+                                    <i></i>
+                                    <span>锁定</span>
+                                </li>
+
+                            </ul>
+                        </div> 
+
+                        <table id="dbgl-table" class="tablesorter">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <input type="checkbox" id="theadInp">
+                                    </th>
+                                    <th>用户账号</th>
+                                    <th>全名</th>
+                                    <th>所属组织机构</th>
+                                    <th>角色</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>用户账号全称</td>
+                                    <td>用户全名</td>
+                                    <td>机构名称</td>
+                                    <td>角色角色</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>用户账号全称</td>
+                                    <td>用户全名</td>
+                                    <td>机构名称</td>
+                                    <td>角色角色</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>用户账号全称</td>
+                                    <td>用户全名</td>
+                                    <td>机构名称</td>
+                                    <td>角色角色</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>用户账号全称</td>
+                                    <td>用户全名</td>
+                                    <td>机构名称</td>
+                                    <td>角色角色</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>用户账号全称</td>
+                                    <td>用户全名</td>
+                                    <td>机构名称</td>
+                                    <td>角色角色</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>用户账号全称</td>
+                                    <td>用户全名</td>
+                                    <td>机构名称</td>
+                                    <td>角色角色</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>用户账号全称</td>
+                                    <td>用户全名</td>
+                                    <td>机构名称</td>
+                                    <td>角色角色</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>用户账号全称</td>
+                                    <td>用户全名</td>
+                                    <td>机构名称</td>
+                                    <td>角色角色</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>用户账号全称</td>
+                                    <td>用户全名</td>
+                                    <td>机构名称</td>
+                                    <td>角色角色</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>用户账号全称</td>
+                                    <td>用户全名</td>
+                                    <td>机构名称</td>
+                                    <td>角色角色</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div id="fenye"></div>
                     </div>
                 </div>
             </div>
@@ -240,4 +375,6 @@
 </html>
 <script src="../../layui/layui.all.js"></script>
 <script src="../../js/jquery.min.js"></script>
+<script src="../../jquery.tablesorter/jquery.tablesorter.js"></script>
+<script src="../../js/template/usergl/zzjg.js"></script>
 <script src="../../js/index.js"></script>

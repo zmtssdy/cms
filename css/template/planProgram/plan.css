@@ -53,6 +53,7 @@
   line-height: 20px;
   background: #f0f3f9;
   color: #A2A8B1;
+  cursor: pointer;
 }
 .m-mian .plan-floor1 .floor-two ul li .floor-search {
   display: inline-block;
@@ -60,6 +61,9 @@
   width: 20px;
   height: 20px;
   background: url(../../../img/icon-search.png) no-repeat center;
+}
+.m-mian .plan-floor1 .floor-two ul .two-hover:hover {
+  background: #e2e6ef;
 }
 .m-mian .plan-floor2 {
   display: flex;

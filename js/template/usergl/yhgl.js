@@ -168,7 +168,9 @@ $(function() {
         // alert(1111)
         $('.module .m-mian .content').find('.toolBar').hide();
     })
-
+    $('.zzjg-floor').mouseenter(function() {
+        $('.module .m-mian .content').find('.toolBar').hide();
+    })
     $('.m-left').mouseenter(function() {
         $('.module .m-mian .content').find('.toolBar').hide();
     })

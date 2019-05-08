@@ -56,6 +56,7 @@
   line-height: 20px;
   background: #f0f3f9;
   color: #A2A8B1;
+  cursor: pointer;
 }
 .m-mian .content .plan-floor1 .floor-two ul li .floor-search {
   display: inline-block;
@@ -63,6 +64,9 @@
   width: 20px;
   height: 20px;
   background: url(../../img/icon-search.png) no-repeat center;
+}
+.m-mian .content .plan-floor1 .floor-two ul .two-hover:hover {
+  background: #e2e6ef;
 }
 .m-mian .content .zzjg-floor {
   margin: 20px;
@@ -114,6 +118,7 @@
   line-height: 30px;
   text-indent: 15px;
   background: #e2e6ef;
+  border: 0;
 }
 .m-mian .content .zzjg-floor .down-box ul li .title-two {
   display: inline-block;
@@ -122,6 +127,7 @@
   line-height: 30px;
   text-indent: 15px;
   background: #e2e6ef;
+  border: 0;
 }
 .m-mian .content .zzjg-floor .down-box ul li .add {
   display: inline-block;
@@ -142,7 +148,7 @@
 .m-mian .content .zzjg-floor .down-box ul li .open {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 10px 0 -30px;
+  margin: 0 10px 0 -25px;
   width: 17px;
   height: 17px;
   background: url('../../img/tree-close.png') no-repeat center;
@@ -150,7 +156,7 @@
 .m-mian .content .zzjg-floor .down-box ul li .close {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 10px 0 -30px;
+  margin: 0 10px 0 -25px;
   width: 17px;
   height: 17px;
   background: url('../../img/tree-open.png') no-repeat center;
@@ -199,12 +205,19 @@
   border-left: 0;
 }
 .m-mian .content .zzjg-floor .down-box ul .node-one > .code {
-  margin-left: 22px;
+  margin-left: 0px;
+}
+.m-mian .content .zzjg-floor .down-box ul .node-one > .open {
+  margin: 0 10px 0 -8px;
+}
+.m-mian .content .zzjg-floor .down-box ul .node-one > .close {
+  margin: 0 10px 0 -8px;
 }
 .m-mian .content .zzjg-floor .down-box ul .node-one > .code .close {
   margin: 0 10px 0 -8px;
 }
 .m-mian .content .zzjg-floor .down-box ul .code {
+  display: inline-block;
   width: 470px;
   height: 30px;
   padding: 3px;
@@ -212,7 +225,7 @@
 .m-mian .content .zzjg-floor .down-box ul .code:hover {
   background: #165ABB;
 }
-.m-mian .content .zzjg-floor .down-box ul .code:hover span {
+.m-mian .content .zzjg-floor .down-box ul .code:hover input {
   background: rgba(226, 230, 239, 0.3);
   color: #fff;
 }

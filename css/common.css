@@ -319,6 +319,9 @@ html {
   color: #273142;
   background: #F0F3F9;
 }
+.top-bra .right-box a.button:hover {
+  background: #e2e6ef;
+}
 .top-bra .right-box .search-box {
   display: flex;
   width: 206px;

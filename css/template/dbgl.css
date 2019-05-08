@@ -91,7 +91,7 @@
 }
 .dbgl .content .toolBar ul li {
   position: absolute;
-  width: 100px;
+  width: 110px;
   height: 40px;
   line-height: 40px;
   cursor: pointer;
@@ -110,11 +110,20 @@
   left: 31px;
   color: #273142;
 }
+.dbgl .content .toolBar ul li em {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  background: #E2E6EF;
+}
 .dbgl .content .toolBar ul li:hover {
   background: #f0f3f9;
 }
 .dbgl .content .toolBar ul li:nth-child(1) {
-  right: 650px;
+  right: 677px;
 }
 .dbgl .content .toolBar ul li:nth-child(1) i {
   left: 22px;
@@ -124,7 +133,7 @@
   left: 47px;
 }
 .dbgl .content .toolBar ul li:nth-child(2) {
-  right: 563px;
+  right: 567px;
 }
 .dbgl .content .toolBar ul li:nth-child(2) i {
   left: 22px;

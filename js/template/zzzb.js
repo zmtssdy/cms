@@ -11,7 +11,7 @@ $(function() {
             , theme: '#165ABB'
         });
 
-        //弹窗
+        //确定删除弹窗
         $('.zzzb .content .toolBar ul .del').click(function() {
             layer.open({
             type: 1,

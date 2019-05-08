@@ -30,7 +30,7 @@ $(function() {
         });
         })
 
-        //查询
+        //查询弹窗
         $('#search').click(function() {
             layer.open({
             type: 1,
@@ -80,7 +80,7 @@ $(function() {
         })
 
 
-        //链接
+        //分享链接弹窗
         $('.dbgl .content .toolBar ul .shareLink').click(function() {
             layer.open({
             type: 1,
@@ -97,7 +97,7 @@ $(function() {
             '</div>'+
             '<div class="icons">'+
                 '<span>'+
-                    '<i></i><i></i><i></i><i></i>'+
+                    '<i></i><i></i><i id="weixin"></i><i></i>'+
                 '</span>'+
             '</div>'+
         '</div>'
@@ -109,7 +109,7 @@ $(function() {
             }
         });
 
-        $('#linkAdress').hover(function() {
+        $('#weixin').hover(function() {
             $('.erweima').show();
         },function() {
             $('.erweima').hide();
@@ -148,9 +148,19 @@ $(function() {
         }
     })
 
-    //蒙层
-    $('.dbgl .content table tbody tr td img').click(function() {
+    //显示蒙层
+    $('.dbgl .content table tbody tr td img').click(function(e) {
         $('.dbgl-play').show();
+    })
+
+    //阻止冒泡
+    $('.dbgl-play img').click(function(e) {
+        e.stopPropagation();
+    })
+
+    //关闭蒙层
+    $('.dbgl-play').click(function() {
+        $('.dbgl-play').hide();
     })
 
     $('.dbgl .content table tbody tr').eq(0).hover(function(el) {

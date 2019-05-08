@@ -50,6 +50,7 @@
                             line-height: 20px;
                             background: rgba(240,243,249,1);
                             color: #A2A8B1;
+                            cursor: pointer;
                         }
                         .floor-search {
                             display: inline-block;
@@ -58,6 +59,9 @@
                             height: 20px;
                             background: url(../../img/icon-search.png) no-repeat center;
                         }
+                    }
+                    .two-hover:hover {
+                        background: #e2e6ef;
                     }
                 }
             }
@@ -110,7 +114,8 @@
                             height: 30px;
                             line-height: 30px;
                             text-indent: 15px;
-                            background:rgba(226,230,239,1)
+                            background:rgba(226,230,239,1);
+                            border: 0;
                         }
                         .title-two {
                             display: inline-block;
@@ -118,7 +123,8 @@
                             height: 30px;
                             line-height: 30px;
                             text-indent: 15px;
-                            background:rgba(226,230,239,1)
+                            background:rgba(226,230,239,1);
+                            border: 0;
                         }
                         .add {
                             display: inline-block;
@@ -139,7 +145,7 @@
                         .open {
                             display: inline-block;
                             vertical-align: middle;
-                            margin: 0 10px 0 -30px;
+                            margin: 0 10px 0 -25px;
                             width: 17px;
                             height: 17px;
                             background: url('../../img/tree-close.png') no-repeat center;
@@ -147,7 +153,7 @@
                         .close {
                             display: inline-block;
                             vertical-align: middle;
-                            margin: 0 10px 0 -30px;
+                            margin: 0 10px 0 -25px;
                             width: 17px;
                             height: 17px;
                             background: url('../../img/tree-open.png') no-repeat center;
@@ -206,18 +212,25 @@
                         border-left: 0;
                     }
                     .node-one >.code {
-                        margin-left: 22px;
+                        margin-left: 0px;
+                    }
+                    .node-one > .open {
+                        margin: 0 10px 0 -8px;
+                    }
+                    .node-one > .close {
+                        margin: 0 10px 0 -8px;
                     }
                     .node-one >.code .close {
                         margin: 0 10px 0 -8px;
                     }
                     .code {
+                        display: inline-block;
                         width: 470px;
                         height: 30px;
                         padding: 3px;
                         &:hover {
                             background: #165ABB;
-                            span {
+                            input {
                                 background:rgba(226,230,239,0.3);
                                 color: #fff;
                             }

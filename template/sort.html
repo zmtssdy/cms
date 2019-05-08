@@ -85,20 +85,26 @@
                     <li class="layui-nav-item">
                         <a href="javascript:;"><i class="icon-yhgl"></i>用户管理</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="../template/usergl/zzjg.html">组织结构</a></dd>
-                            <dd><a href="../template/usergl/adduser.html">用户管理</a></dd>
-                            <dd><a href="../template/usergl/zzjg.html">外部认证</a></dd>
+                            <dd><a href="../template/usergl/zzjg.html">分类结构</a></dd>
+                            <dd><a href="../template/usergl/yhgl.html">用户管理</a></dd>
+                            <dd><a href="../template/usergl/wbrz.html">外部认证</a></dd>
                         </dl>
                     </li>
+                    <li class="layui-nav-item"><a href="../template/gonggaogl/notice.html"><i class="icon-gggl"></i>公告管理</a></li>
+
                 </ul>
             </div>
-        
+
             <div class="common-nav2">
                 <ul class="layui-nav layui-nav-tree layui-bg-cyan layui-inline" lay-filter="demo">
-                    <li class="layui-nav-item"><a href="../template/planProgram/plan.html"><i class="icon-yagl"></i>预案管理</a></li>
-                    <li class="layui-nav-item"><a href="../template/taskManage.html"><i class="icon-rwgl"></i>任务管理</a></li>
-                    <li class="layui-nav-item"><a href="../template/terminalManage.html"><i class="icon-zdgl"></i>终端管理</a></li>
-                    <li class="layui-nav-item"><a href="../template/deviceManage.html"><i class="icon-sbgl"></i>设备管理</a></li>
+                    <li class="layui-nav-item"><a href="../template/planProgram/plan.html"><i
+                                class="icon-yagl"></i>预案管理</a></li>
+                    <li class="layui-nav-item"><a href="../template/taskManage.html"><i class="icon-rwgl"></i>任务管理</a>
+                    </li>
+                    <li class="layui-nav-item"><a href="../template/terminalManage.html"><i
+                                class="icon-zdgl"></i>终端管理</a></li>
+                    <li class="layui-nav-item"><a href="../template/deviceManage.html"><i class="icon-sbgl"></i>设备管理</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -117,8 +123,8 @@
                                 <input type="text" placeholder="输入关键字搜索" class="search-text">
                                 <i class="floor-search"></i>
                             </li>
-                            <li>精确查询</li>
-                            <li>新增分类</li>
+                            <li class="two-hover">精确查询</li>
+                            <li class="two-hover">新增分类</li>
                         </ul>
                     </div>
                 </div>
@@ -129,20 +135,20 @@
                         <!-- active-one 一级展开 active-off 一级收起  active-open 二级展开 active-close 二级收起 -->
                         <ul>
                             <li class="node-one active-one">
+                                <i class="open"></i>
                                 <div class="code">
-                                    <i class="open"></i>
-                                    <span class="title-one">分类一</span>
-                                    <span class="title-two">标签一</span>
+                                    <input type="text" class="title-one" value="分类一">
+                                    <input type="text" class="title-two" value="标签一">
                                     <em class="add"></em>
                                     <em class="remove"></em>
                                 </div>
 
                                 <ul class="node-two active-close">
                                     <li>
+                                        <i class="close"></i>
                                         <div class="code">
-                                            <i class="close"></i>
-                                            <span class="title-one">分类二</span>
-                                            <span class="title-two">标签二</span>
+                                            <input type="text" class="title-one" value="分类二">
+                                            <input type="text" class="title-two" value="标签二">
                                             <em class="add"></em>
                                             <em class="remove"></em>
                                         </div>
@@ -151,8 +157,8 @@
                                         <ul class="node-three">
                                             <li>
                                                 <div class="code">
-                                                    <span class="title-one">分类三</span>
-                                                    <span class="title-two">标签三</span>
+                                                    <input type="text" class="title-one" value="分类三">
+                                                    <input type="text" class="title-two" value="标签三">
                                                     <em class="add"></em>
                                                     <em class="remove"></em>
                                                 </div>
@@ -161,8 +167,8 @@
                                         <ul class="node-three">
                                             <li>
                                                 <div class="code">
-                                                    <span class="title-one">分类三</span>
-                                                    <span class="title-two">标签三</span>
+                                                    <input type="text" class="title-one" value="分类三">
+                                                    <input type="text" class="title-two" value="标签三">
                                                     <em class="add"></em>
                                                     <em class="remove"></em>
                                                 </div>
@@ -172,10 +178,10 @@
                                 </ul>
                                 <ul class="node-two active-close">
                                     <li>
+                                        <i class="close"></i>
                                         <div class="code">
-                                            <i class="close"></i>
-                                            <span class="title-one">分类二</span>
-                                            <span class="title-two">标签二</span>
+                                            <input type="text" class="title-one" value="分类二">
+                                            <input type="text" class="title-two" value="标签二">
                                             <em class="add"></em>
                                             <em class="remove"></em>
                                         </div>
@@ -184,8 +190,8 @@
                                         <ul class="node-three">
                                             <li>
                                                 <div class="code">
-                                                    <span class="title-one">分类三</span>
-                                                    <span class="title-two">标签三</span>
+                                                    <input type="text" class="title-one" value="分类三">
+                                                    <input type="text" class="title-two" value="标签二">
                                                     <em class="add"></em>
                                                     <em class="remove"></em>
                                                 </div>
@@ -194,8 +200,8 @@
                                         <ul class="node-three">
                                             <li>
                                                 <div class="code">
-                                                    <span class="title-one">分类三</span>
-                                                    <span class="title-two">标签三</span>
+                                                    <input type="text" class="title-one" value="分类三">
+                                                    <input type="text" class="title-two" value="标签二">
                                                     <em class="add"></em>
                                                     <em class="remove"></em>
                                                 </div>
@@ -205,10 +211,10 @@
                                 </ul>
                                 <ul class="node-two active-open">
                                     <li>
+                                        <i class="open"></i>
                                         <div class="code">
-                                            <i class="open"></i>
-                                            <span class="title-one">分类二</span>
-                                            <span class="title-two">标签二</span>
+                                            <input type="text" class="title-one" value="分类二">
+                                            <input type="text" class="title-two" value="标签二">
                                             <em class="add"></em>
                                             <em class="remove"></em>
                                         </div>
@@ -217,8 +223,8 @@
                                         <ul class="node-three">
                                             <li>
                                                 <div class="code">
-                                                    <span class="title-one">分类三</span>
-                                                    <span class="title-two">标签三</span>
+                                                    <input type="text" class="title-one" value="分类三">
+                                                    <input type="text" class="title-two" value="标签三">
                                                     <em class="add"></em>
                                                     <em class="remove"></em>
                                                 </div>
@@ -227,8 +233,8 @@
                                         <ul class="node-three">
                                             <li>
                                                 <div class="code">
-                                                    <span class="title-one">分类三</span>
-                                                    <span class="title-two">标签三</span>
+                                                    <input type="text" class="title-one" value="分类三">
+                                                    <input type="text" class="title-two" value="标签三">
                                                     <em class="add"></em>
                                                     <em class="remove"></em>
                                                 </div>

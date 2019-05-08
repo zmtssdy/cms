@@ -26,6 +26,44 @@
                     cursor: pointer;
                 }
             }
+            .floor-two {
+                float: right;
+                ul {
+                    list-style: none;
+                    margin-top: 10px;
+                    margin-right: 20px;
+                    li {
+                        float: right;
+                        padding: 5px 10px;
+                        box-sizing: border-box;
+                        width: auto;
+                        line-height: 20px;
+                        border-right: 2px solid #fff;
+                        font-size:14px;
+                        font-family:'MicrosoftYaHei';
+                        font-weight:400;
+                        color:#273142;
+                        background:rgba(240,243,249,1);
+                        cursor: pointer;
+                        input {
+                            border: none;
+                            line-height: 20px;
+                            background: rgba(240,243,249,1);
+                            color: #A2A8B1;
+                        }
+                        .floor-search {
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 20px;
+                            height: 20px;
+                            background: url(../../../img/icon-search.png) no-repeat center;
+                        }
+                    }
+                    .two-hover:hover {
+                        background: #e2e6ef;
+                    }
+                }
+            }
         }
         .zzjg-center {
             display: flex;
@@ -35,7 +73,7 @@
             .zzjg-floor {
                 margin: 20px;
                 box-sizing: border-box;
-                width: 100%;
+                min-width: 466px;
                 height: 80%;
                 background: #fff;
                 // overflow-y: auto;
@@ -77,7 +115,7 @@
                             .title-one {
                                 display: inline-block;
                                 // margin-top: 20px;
-                                width: 268px;
+                                width: 168px;
                                 height: 30px;
                                 line-height: 30px;
                                 text-indent: 15px;
@@ -86,7 +124,7 @@
                             }
                             .title-two {
                                 display: inline-block;
-                                width: 120px;
+                                width: 100px;
                                 height: 30px;
                                 line-height: 30px;
                                 text-indent: 15px;
@@ -175,24 +213,24 @@
                                 display: none;
                             } 
                         }
-                        .node-one > .open {
-                            margin: 0 10px 0 -10px;
-                        }
-                        .node-one > .close {
-                            margin: 0 10px 0 -10px;
-                        }
                         .node-one .active-open:last-of-type >.two-next {
                             border-left: 0;
                         }
                         .node-one >.code {
                             margin-left: 0px;
                         }
+                        .node-one > .open {
+                            margin: 0 10px 0 -8px;
+                        }
+                        .node-one > .close {
+                            margin: 0 10px 0 -8px;
+                        }
                         .node-one >.code .close {
                             margin: 0 10px 0 -8px;
                         }
                         .code {
                             display: inline-block;
-                            width: 470px;
+                            width: 350px;
                             height: 30px;
                             padding: 3px;
                             &:hover {
@@ -219,7 +257,6 @@
                     }
                 }
                 .down-box >ul {
-<<<<<<< HEAD
                     margin-left: 1px;
                 }
             }
@@ -322,13 +359,13 @@
                         height: 40px;
                         li {
                             position: absolute;
-                            width: 110px;
+                            width: 100px;
                             height: 40px;
                             line-height: 40px;
                             i {
                                 position: absolute;
                                 top:10px;
-                                left: 23px;
+                                left: 10px;
                                 display: inline-block;
                                 width: 16px;
                                 height: 16px;
@@ -337,17 +374,8 @@
                             span {
                                 position: absolute;
                                 top: -1px;
-                                left: 47px;
+                                left: 31px;
                                 color:rgba(39,49,66,1);
-                            }
-                            em {
-                                position: absolute;
-                                top: 10px;
-                                right: 0;
-                                display: inline-block;
-                                width: 1px;
-                                height: 20px;
-                                background: #E2E6EF;
                             }
                             cursor: pointer;
                             &:hover {
@@ -383,9 +411,6 @@
                     .layui-disabled {
                         background: #fff !important;
                     }
-=======
-                    margin-left: 25px;
->>>>>>> 44c17dd9630b35542280ac9d6f91651724282b14
                 }
             }
         }

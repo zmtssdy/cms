@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../css/common.css">
     <!-- 分页样式 -->
     <link rel="stylesheet" href="../../jquery.tablesorter/themes/blue/style.css">
-    <link rel="stylesheet" href="../../css/template/usergl/zzjg.css">
+    <link rel="stylesheet" href="../../css/template/usergl/yhgl.css">
 </head>
 
 <body>
@@ -119,13 +119,25 @@
                 <div class="plan-floor1">
                     <div class="floor-one">
                         <i></i>
-                        <span>用户管理 > 组织机构</span>
+                        <span>用户管理</span>
+                    </div>
+                    <div class="floor-two">
+                        <ul>
+                            <li>
+                                <input type="text" placeholder="输入关键字搜索" class="search-text">
+                                <i class="floor-search"></i>
+                            </li>
+                            <li class="two-update two-hover">导入用户</li>
+                            <li class="two-add two-hover"><a href="../../template/usergl/adduser.html">新增用户</a></li>
+                            <li class="two-delete two-hover">批量删除</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="zzjg-center">
                     <div class="zzjg-floor">
                         <p class="zzjg-title">组织机构</p>
                         <div class="down-box">
+                            <!-- <p class="addTitle">新建一级组织</p> -->
                             <!-- active-one 一级展开 active-off 一级收起  active-open 二级展开 active-close 二级收起 -->
                             <ul>
                                 <li class="node-one active-one">
@@ -240,6 +252,133 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="zzjg-floor1">
+                        <div class="toolBar">
+                            <ul>
+                                <li>
+                                    <i></i>
+                                    <span>删除</span>
+                                </li>
+                                <li>
+                                    <i></i>
+                                    <span>编辑</span>
+                                </li>
+                                <li>
+                                    <i></i>
+                                    <span>锁定</span>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <table id="dbgl-table" class="tablesorter">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <input type="checkbox" id="theadInp">
+                                    </th>
+                                    <th>用户账号</th>
+                                    <th>全名</th>
+                                    <th>所属组织机构</th>
+                                    <th>角色</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>用户账号全称</td>
+                                    <td>用户全名</td>
+                                    <td>机构名称</td>
+                                    <td>角色角色</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>用户账号全称</td>
+                                    <td>用户全名</td>
+                                    <td>机构名称</td>
+                                    <td>角色角色</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>用户账号全称</td>
+                                    <td>用户全名</td>
+                                    <td>机构名称</td>
+                                    <td>角色角色</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>用户账号全称</td>
+                                    <td>用户全名</td>
+                                    <td>机构名称</td>
+                                    <td>角色角色</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>用户账号全称</td>
+                                    <td>用户全名</td>
+                                    <td>机构名称</td>
+                                    <td>角色角色</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>用户账号全称</td>
+                                    <td>用户全名</td>
+                                    <td>机构名称</td>
+                                    <td>角色角色</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>用户账号全称</td>
+                                    <td>用户全名</td>
+                                    <td>机构名称</td>
+                                    <td>角色角色</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>用户账号全称</td>
+                                    <td>用户全名</td>
+                                    <td>机构名称</td>
+                                    <td>角色角色</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>用户账号全称</td>
+                                    <td>用户全名</td>
+                                    <td>机构名称</td>
+                                    <td>角色角色</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>用户账号全称</td>
+                                    <td>用户全名</td>
+                                    <td>机构名称</td>
+                                    <td>角色角色</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div id="fenye"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -249,4 +388,6 @@
 </html>
 <script src="../../layui/layui.all.js"></script>
 <script src="../../js/jquery.min.js"></script>
+<script src="../../jquery.tablesorter/jquery.tablesorter.js"></script>
+<script src="../../js/template/usergl/yhgl.js"></script>
 <script src="../../js/index.js"></script>

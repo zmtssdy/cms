@@ -257,13 +257,13 @@ html {
   width: 100%;
   box-sizing: border-box;
 }
-.layui-nav-itemed > a {
+.layui-nav-itemeds > a {
   background: #165ABB;
 }
 .layui-nav-itemed .layui-nav-child a:hover {
   background: #0F4399;
 }
-.layui-nav-item:hover > a {
+.layui-nav-item > a:hover {
   background: #165ABB !important;
 }
 .layui-nav-itemed > .layui-nav-child {

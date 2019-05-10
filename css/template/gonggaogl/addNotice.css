@@ -123,10 +123,12 @@
 }
 .m-mian .user-floor2 .user1-1 .user-content .user-link .user-2 textarea {
   margin-bottom: 20px;
+  padding: 8px;
   width: 81.6%;
   height: 278px;
   resize: none;
   border: none;
+  text-indent: 2em;
 }
 .m-mian .user-floor2 .user1-1 .user-content .user-link:last-child {
   padding-top: 10px;
